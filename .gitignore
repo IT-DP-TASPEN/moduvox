@@ -22,3 +22,20 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# ============================
+# Project Portofolio (Laravel apps via git clone)
+# Ignore semua isi folder project, kecuali .gitkeep dan README
+# ============================
+projects/hris/*
+projects/siardi/*
+projects/crm/*
+projects/core-banking/*
+projects/bantuan-potong/*
+projects/sinergi/*
+projects/btn-channeling/*
+projects/web-company-profile/*
+
+# Tapi tetap track placeholder & README
+!projects/*/.gitkeep
+!projects/README.md

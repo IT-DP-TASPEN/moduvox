@@ -203,8 +203,25 @@
   font-size: 0.9rem;
   color: var(--text);
   line-height: 1.5;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   flex-grow: 1;
+}
+
+.techTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin-bottom: 1.25rem;
+}
+
+.techTag {
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  background-color: var(--surface-alt);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.7rem;
+  font-weight: 500;
 }
 
 .cardAction {
@@ -221,6 +238,7 @@
   justify-content: center;
   gap: 0.5rem;
   transition: all var(--transition-fast);
+  text-decoration: none;
 }
 
 .card:hover .cardAction {

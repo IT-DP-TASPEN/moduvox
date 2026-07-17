@@ -23,6 +23,14 @@ export default function Methodology() {
           transition={{ duration: 0.5 }}
           style={{ textAlign: 'center', marginBottom: '4rem' }}
         >
+          {/* Eyebrow */}
+          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1rem' }}>
+            <div className="section-eyebrow">
+              <span className="section-eyebrow-dot" />
+              Cara Kami Bekerja
+            </div>
+          </div>
+
           <h2 style={{ fontSize: '2.5rem', fontWeight: 800, color: '#1E293B', marginBottom: '1rem', letterSpacing: '-0.02em' }}>
             Metodologi Implementasi
           </h2>
@@ -38,7 +46,9 @@ export default function Methodology() {
           {/* Connecting line */}
           <div style={{
             position: 'absolute', top: '32px', left: '10%', right: '10%',
-            height: '2px', background: '#E2E8F0', zIndex: 0,
+            height: '2px',
+            background: 'linear-gradient(90deg, var(--primary-light), var(--primary), var(--secondary), var(--primary), var(--primary-light))',
+            zIndex: 0,
           }} />
 
           {steps.map((step, i) => {
@@ -59,12 +69,22 @@ export default function Methodology() {
                   background: '#FFFFFF', border: '2px solid #005BAC',
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
                   margin: '0 auto 1.25rem auto',
-                  boxShadow: '0 4px 12px rgba(0,91,172,0.1)',
-                }}>
-                  <Icon size={24} color="#005BAC" />
+                  boxShadow: '0 4px 16px rgba(0,91,172,0.12)',
+                  transition: 'all 300ms ease',
+                }}
+                onMouseEnter={e => {
+                  e.currentTarget.style.background = 'var(--primary)';
+                  e.currentTarget.querySelector('svg').style.color = '#fff';
+                }}
+                onMouseLeave={e => {
+                  e.currentTarget.style.background = '#FFFFFF';
+                  e.currentTarget.querySelector('svg').style.color = '#005BAC';
+                }}
+                >
+                  <Icon size={24} color="#005BAC" style={{ transition: 'color 300ms ease' }} />
                 </div>
                 <div style={{
-                  fontSize: '0.75rem', fontWeight: 700, color: '#005BAC',
+                  fontSize: '0.7rem', fontWeight: 700, color: '#005BAC',
                   textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.5rem',
                 }}>
                   Step {i + 1}

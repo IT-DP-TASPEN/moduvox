@@ -137,9 +137,9 @@ export default function SolutionDetail() {
             Hubungi kami untuk demo lengkap dan diskusi kebutuhan spesifik organisasi Anda.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
-            <a href="#consultation" className="btn-primary" style={{ padding: '0.875rem 2rem', fontSize: '1rem' }}>
+            <Link to="/portfolio" className="btn-primary" style={{ padding: '0.875rem 2rem', fontSize: '1rem' }}>
               Minta Demo Lengkap <ArrowRight size={18} />
-            </a>
+            </Link>
             <Link to="/" className="btn-outline" style={{ padding: '0.875rem 2rem', fontSize: '1rem' }}>
               Lihat Produk Lainnya
             </Link>

@@ -35,6 +35,14 @@ export default function CapabilityMatrix() {
           transition={{ duration: 0.5 }}
           style={{ textAlign: 'center', marginBottom: '4rem' }}
         >
+          {/* Eyebrow */}
+          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1rem' }}>
+            <div className="section-eyebrow">
+              <span className="section-eyebrow-dot" />
+              Kapabilitas
+            </div>
+          </div>
+
           <h2 style={{ fontSize: '2.5rem', fontWeight: 800, color: '#1E293B', marginBottom: '1rem', letterSpacing: '-0.02em' }}>
             Kapabilitas Solusi
           </h2>
@@ -55,25 +63,26 @@ export default function CapabilityMatrix() {
                 initial={{ opacity: 0, y: 15 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.4, delay: i * 0.05 }}
+                className="glass-card"
                 style={{
                   padding: '1.5rem 1rem', textAlign: 'center',
-                  background: '#F8FAFC', borderRadius: '12px',
-                  border: '1px solid #E2E8F0',
-                  transition: 'all 200ms ease',
                   cursor: 'default',
                 }}
                 onMouseEnter={e => {
                   e.currentTarget.style.borderColor = '#005BAC';
-                  e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,91,172,0.08)';
-                  e.currentTarget.style.transform = 'translateY(-2px)';
                 }}
                 onMouseLeave={e => {
-                  e.currentTarget.style.borderColor = '#E2E8F0';
-                  e.currentTarget.style.boxShadow = 'none';
-                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.borderColor = 'rgba(255,255,255,0.8)';
                 }}
               >
-                <Icon size={28} color="#005BAC" style={{ marginBottom: '0.75rem' }} />
+                <div style={{
+                  width: '48px', height: '48px', borderRadius: '12px',
+                  background: 'var(--primary-light)',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  margin: '0 auto 0.75rem auto',
+                }}>
+                  <Icon size={24} color="#005BAC" />
+                </div>
                 <div style={{ fontSize: '0.875rem', fontWeight: 600, color: '#1E293B', marginBottom: '0.25rem' }}>{cap.label}</div>
                 <div style={{ fontSize: '0.75rem', color: '#94A3B8' }}>{cap.desc}</div>
               </motion.div>
@@ -98,7 +107,19 @@ export default function CapabilityMatrix() {
                 background: '#F1F5F9', color: '#64748B',
                 fontSize: '0.8rem', fontWeight: 500,
                 border: '1px solid #E2E8F0',
-              }}>{tech}</span>
+                transition: 'all 200ms ease',
+              }}
+              onMouseEnter={e => {
+                e.currentTarget.style.borderColor = '#005BAC';
+                e.currentTarget.style.color = '#005BAC';
+                e.currentTarget.style.background = 'var(--primary-light)';
+              }}
+              onMouseLeave={e => {
+                e.currentTarget.style.borderColor = '#E2E8F0';
+                e.currentTarget.style.color = '#64748B';
+                e.currentTarget.style.background = '#F1F5F9';
+              }}
+              >{tech}</span>
             ))}
           </div>
         </motion.div>

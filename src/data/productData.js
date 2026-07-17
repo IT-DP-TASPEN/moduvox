@@ -368,9 +368,9 @@ export const products = [
             title: 'Top Deals Bulan Ini',
             headers: ['Company', 'Contact', 'Value', 'Stage'],
             rows: [
-              ['Bank Maju Jaya', 'Sinta (VP IT)', 'Rp 1.2B', 'Negotiation'],
-              ['TechCorp', 'Budi (CEO)', 'Rp 800M', 'Proposal'],
-              ['Koperasi Sejahtera', 'Hendra', 'Rp 400M', 'Qualified'],
+              ['PT Nusantara Prima', 'Sinta (VP IT)', 'Rp 1.2B', 'Negotiation'],
+              ['CV Cipta Solusi', 'Budi (CEO)', 'Rp 800M', 'Proposal'],
+              ['Koperasi Makmur', 'Hendra', 'Rp 400M', 'Qualified'],
             ]
           }
         },
@@ -384,9 +384,9 @@ export const products = [
             title: 'Database Pelanggan',
             headers: ['Company', 'Contact', 'Segment', 'Value'],
             rows: [
-              ['Bank Maju Jaya', 'Sinta', 'Enterprise', 'Rp 2.4B'],
-              ['RetailX', 'Agus', 'Mid-Market', 'Rp 350M'],
-              ['Global Logistics', 'Maya', 'Enterprise', 'Rp 1.8B'],
+              ['PT Nusantara Prima', 'Sinta', 'Enterprise', 'Rp 2.4B'],
+              ['Toko Makmur Digital', 'Agus', 'Mid-Market', 'Rp 350M'],
+              ['PT Logistik Cepat', 'Maya', 'Enterprise', 'Rp 1.8B'],
             ]
           }
         },
@@ -399,9 +399,9 @@ export const products = [
             title: 'Activity Log',
             headers: ['Sales Rep', 'Aktivitas', 'Client', 'Waktu'],
             rows: [
-              ['Andi', 'Meeting', 'Bank Maju', '10:00'],
-              ['Rina', 'Call', 'RetailX', '11:30'],
-              ['Dedi', 'Email Follow-up', 'TechCorp', '14:00'],
+              ['Andi', 'Meeting', 'Nusantara Prima', '10:00'],
+              ['Rina', 'Call', 'Toko Makmur', '11:30'],
+              ['Dedi', 'Email Follow-up', 'Cipta Solusi', '14:00'],
             ]
           }
         },
@@ -449,8 +449,8 @@ export const products = [
             title: 'Deals Saya',
             headers: ['Company', 'Value', 'Stage', 'Next Action'],
             rows: [
-              ['RetailX', 'Rp 350M', 'Proposal', 'Send Proposal'],
-              ['KSP Mandiri', 'Rp 200M', 'Qualified', 'Schedule Demo'],
+              ['Toko Makmur', 'Rp 350M', 'Proposal', 'Send Proposal'],
+              ['KSP Harapan', 'Rp 200M', 'Qualified', 'Schedule Demo'],
             ]
           }
         },
@@ -463,9 +463,9 @@ export const products = [
             title: 'To-Do List',
             headers: ['Task', 'Client', 'Deadline'],
             rows: [
-              ['Follow-up call', 'RetailX', '24 Jun'],
-              ['Send Proposal', 'KSP Mandiri', '25 Jun'],
-              ['Update CRM Notes', 'TechCorp', '24 Jun'],
+              ['Follow-up call', 'Toko Makmur', '24 Jun'],
+              ['Send Proposal', 'KSP Harapan', '25 Jun'],
+              ['Update CRM Notes', 'Cipta Solusi', '24 Jun'],
             ]
           }
         },
@@ -784,8 +784,8 @@ export const products = [
     }
   },
   {
-    id: 'btn-channeling',
-    name: 'BTN Channeling',
+    id: 'moduvox-channeling',
+    name: 'Moduvox Channeling',
     tagline: 'Sistem Channeling Kredit Perbankan',
     problem: 'Proses penyaluran kredit dari bank induk ke lembaga penyalur masih manual, lambat, dan rawan kesalahan data sehingga menghambat pencairan dan reporting ke bank induk.',
     benefits: [
@@ -814,9 +814,9 @@ export const products = [
             title: 'Monitoring Penyaluran',
             headers: ['Bank Induk', 'Skema', 'Outstanding', 'Status'],
             rows: [
-              ['BTN', 'KPR Subsidi', 'Rp 8.5M', 'Aktif'],
-              ['BTN', 'KPR Non-Subsidi', 'Rp 4.2M', 'Aktif'],
-              ['BTN', 'Kredit Multi Guna', 'Rp 2.3M', 'Aktif'],
+              ['Moduvox Bank', 'KPR Subsidi', 'Rp 8.5M', 'Aktif'],
+              ['Moduvox Bank', 'KPR Non-Subsidi', 'Rp 4.2M', 'Aktif'],
+              ['Moduvox Bank', 'Kredit Multi Guna', 'Rp 2.3M', 'Aktif'],
             ]
           }
         },
@@ -858,8 +858,8 @@ export const products = [
             title: 'Laporan Channeling',
             headers: ['Laporan', 'Format', 'Periode', 'Status'],
             rows: [
-              ['Realisasi Penyaluran', 'BTN Format', 'Juni 2026', 'Siap'],
-              ['Kualitas Aktiva', 'BTN Format', 'Juni 2026', 'Draft'],
+              ['Realisasi Penyaluran', 'Moduvox Format', 'Juni 2026', 'Siap'],
+              ['Kualitas Aktiva', 'Moduvox Format', 'Juni 2026', 'Draft'],
               ['Delinquency Report', 'Internal', 'Juni 2026', 'Siap'],
             ]
           }

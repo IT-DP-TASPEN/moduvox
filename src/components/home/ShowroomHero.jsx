@@ -28,16 +28,32 @@ export default function ShowroomHero() {
 
   return (
     <section style={{
-      padding: '8rem 0 6rem 0',
+      padding: '8rem 0 0 0',
       background: '#FFFFFF',
       position: 'relative',
       overflow: 'hidden',
     }}>
-      {/* Subtle gradient accent */}
+      {/* === GRID PATTERN BACKGROUND === */}
       <div style={{
-        position: 'absolute', top: 0, right: 0, width: '40%', height: '100%',
-        background: 'linear-gradient(135deg, rgba(0,91,172,0.03) 0%, rgba(14,165,233,0.03) 100%)',
+        position: 'absolute', inset: 0,
+        backgroundImage: `
+          linear-gradient(rgba(0,91,172,0.03) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(0,91,172,0.03) 1px, transparent 1px)
+        `,
+        backgroundSize: '48px 48px',
         zIndex: 0,
+      }} />
+
+      {/* === MESH GRADIENT ACCENTS === */}
+      <div style={{
+        position: 'absolute', top: '-20%', right: '-10%', width: '600px', height: '600px',
+        background: 'radial-gradient(circle, rgba(0,91,172,0.06) 0%, transparent 70%)',
+        borderRadius: '50%', zIndex: 0, filter: 'blur(40px)',
+      }} />
+      <div style={{
+        position: 'absolute', bottom: '-10%', left: '-5%', width: '400px', height: '400px',
+        background: 'radial-gradient(circle, rgba(14,165,233,0.05) 0%, transparent 70%)',
+        borderRadius: '50%', zIndex: 0, filter: 'blur(40px)',
       }} />
 
       <div className="container-wide" style={{ position: 'relative', zIndex: 1 }}>
@@ -46,7 +62,7 @@ export default function ShowroomHero() {
           gridTemplateColumns: '1fr 1fr',
           gap: '4rem',
           alignItems: 'center',
-          marginBottom: '2rem'
+          marginBottom: '4rem'
         }}>
           
           {/* Left Column: Text Content */}
@@ -56,18 +72,9 @@ export default function ShowroomHero() {
             transition={{ duration: 0.7 }}
             style={{ maxWidth: '600px' }}
           >
-            <div style={{
-              display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
-              padding: '0.375rem 1rem',
-              background: 'var(--surface-alt)',
-              border: '1px solid var(--border)',
-              borderRadius: '999px',
-              marginBottom: '2rem',
-            }}>
-              <span style={{ width: 8, height: 8, borderRadius: '50%', background: 'var(--primary)' }} />
-              <span style={{ fontSize: '0.8rem', fontWeight: 600, color: 'var(--primary)' }}>
-                7 Produk Enterprise Siap Operasional
-              </span>
+            <div className="section-eyebrow">
+              <span className="section-eyebrow-dot" />
+              7 Produk Enterprise Siap Operasional
             </div>
 
             <h1 style={{
@@ -77,11 +84,16 @@ export default function ShowroomHero() {
             }}>
               Enterprise Application
               <br />
-              <span style={{ color: 'var(--primary)' }}>Experience Center</span>
+              <span style={{
+                background: 'linear-gradient(135deg, var(--primary), var(--secondary))',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+              }}>Experience Center</span>
             </h1>
 
             <p style={{
-              fontSize: '1.2rem', color: 'var(--muted-foreground)', lineHeight: 1.7,
+              fontSize: '1.2rem', color: 'var(--text-muted)', lineHeight: 1.7,
               marginBottom: '2.5rem',
             }}>
               Jelajahi langsung aplikasi enterprise yang telah kami bangun dan operasikan.
@@ -115,6 +127,7 @@ export default function ShowroomHero() {
                 exit={{ opacity: 0, scale: 1.02, filter: 'blur(4px)' }}
                 transition={{ duration: 0.8, ease: "easeInOut" }}
                 style={{ width: '100%', position: 'absolute' }}
+                className="app-window-float"
               >
                 <InteractiveAppWindow 
                   appName={`${carouselProducts[currentProductIndex].name} - Live Preview`}
@@ -124,11 +137,33 @@ export default function ShowroomHero() {
                 />
               </motion.div>
             </AnimatePresence>
+
+            {/* Carousel Indicators */}
+            <div style={{
+              position: 'absolute', bottom: '-1.5rem',
+              display: 'flex', gap: '0.5rem',
+            }}>
+              {carouselProducts.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setCurrentProductIndex(i)}
+                  style={{
+                    width: i === currentProductIndex ? '24px' : '8px',
+                    height: '8px',
+                    borderRadius: '999px',
+                    border: 'none',
+                    background: i === currentProductIndex ? 'var(--primary)' : 'var(--border)',
+                    cursor: 'pointer',
+                    transition: 'all 300ms ease',
+                  }}
+                />
+              ))}
+            </div>
           </motion.div>
           
         </div>
 
-        {/* Stats */}
+        {/* Stats Section with border top & bottom */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -136,7 +171,7 @@ export default function ShowroomHero() {
           style={{
             display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)',
             gap: '2rem',
-            padding: '2rem 0',
+            padding: '2.5rem 0',
             borderTop: '1px solid var(--border)',
             maxWidth: '1000px'
           }}
@@ -146,10 +181,17 @@ export default function ShowroomHero() {
               <div style={{ fontSize: '2.5rem', fontWeight: 800, color: 'var(--foreground)', letterSpacing: '-0.02em' }}>
                 <AnimatedCounter value={stat.value} suffix={stat.suffix || ''} duration={1.5} />
               </div>
-              <div style={{ fontSize: '0.875rem', color: 'var(--muted-foreground)', fontWeight: 500 }}>{stat.label}</div>
+              <div style={{ fontSize: '0.875rem', color: 'var(--text-muted)', fontWeight: 500 }}>{stat.label}</div>
             </div>
           ))}
         </motion.div>
+      </div>
+
+      {/* === WAVE DIVIDER at bottom === */}
+      <div className="section-divider" style={{ marginTop: '2rem' }}>
+        <svg viewBox="0 0 1440 48" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,0 C360,48 1080,48 1440,0 L1440,48 L0,48 Z" fill="#F1F5F9" />
+        </svg>
       </div>
     </section>
   );
