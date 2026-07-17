@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Moduvox Enterprise - Portofolio</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#c9e6ff",
+                        "surface-container-low": "#f2f3fb",
+                        "inverse-primary": "#a7c8ff",
+                        "outline": "#727783",
+                        "primary-container": "#005bac",
+                        "error": "#ba1a1a",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#d5e3ff",
+                        "tertiary-fixed-dim": "#ffb68e",
+                        "surface-dim": "#d8dae1",
+                        "surface-bright": "#f9f9ff",
+                        "background": "#f9f9ff",
+                        "on-primary-fixed-variant": "#004788",
+                        "outline-variant": "#c2c6d3",
+                        "on-surface-variant": "#424751",
+                        "on-secondary-fixed-variant": "#004c6e",
+                        "tertiary-fixed": "#ffdbca",
+                        "surface": "#f9f9ff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "primary-fixed-dim": "#a7c8ff",
+                        "primary": "#004482",
+                        "secondary-container": "#39b8fd",
+                        "inverse-surface": "#2e3036",
+                        "on-background": "#191c21",
+                        "tertiary": "#713000",
+                        "on-secondary-fixed": "#001e2f",
+                        "on-tertiary-container": "#ffc7aa",
+                        "surface-container-high": "#e7e8ef",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#004666",
+                        "on-surface": "#191c21",
+                        "surface-container-highest": "#e1e2e9",
+                        "on-tertiary-fixed": "#331200",
+                        "on-primary-fixed": "#001b3b",
+                        "inverse-on-surface": "#eff0f8",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed-dim": "#89ceff",
+                        "surface-variant": "#e1e2e9",
+                        "tertiary-container": "#964200",
+                        "surface-tint": "#0b5eaf",
+                        "on-tertiary-fixed-variant": "#773300",
+                        "on-primary-container": "#bdd5ff",
+                        "secondary": "#006591",
+                        "surface-container": "#ecedf5",
+                        "on-secondary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "40px",
+                        "xl": "32px",
+                        "base": "4px",
+                        "md": "16px",
+                        "sm": "8px",
+                        "xs": "4px",
+                        "lg": "24px"
+                    },
+                    "fontFamily": {
+                        "title-lg": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "display-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased min-h-screen flex flex-col">
+<nav class="bg-surface/80 backdrop-blur-md full-width top-0 sticky border-b border-outline-variant shadow-sm z-50">
+<div class="flex justify-between items-center w-full px-margin-desktop py-md max-w-7xl mx-auto">
+<div class="text-headline-md font-headline-md font-bold text-primary">Moduvox</div>
+<div class="hidden md:flex items-center gap-lg font-body-lg text-body-lg">
+<a class="text-on-surface-variant hover:text-primary transition-colors py-2" href="#">Beranda</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors py-2" href="#">Solusi</a>
+<a class="text-primary font-bold border-b-2 border-primary hover:text-primary transition-colors py-2" href="#">Portofolio</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors py-2" href="#">Metodologi</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors py-2" href="#">Kontak</a>
+</div>
+<button class="hidden md:flex items-center justify-center bg-primary text-on-primary font-label-md text-label-md px-lg py-sm rounded-lg hover:bg-on-primary-fixed-variant transition-colors">
+                Jadwalkan Demo
+            </button>
+<button class="md:hidden text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="flex-grow w-full max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-xl flex flex-col gap-xl">
+<section class="flex flex-col gap-sm max-w-4xl pt-lg">
+<h1 class="font-display-lg text-display-lg text-on-surface">Portal Demo Aplikasi</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                Jelajahi seluruh solusi enterprise yang telah kami bangun dan rasakan pengalaman menggunakan setiap aplikasi melalui simulasi interaktif.
+            </p>
+</section>
+<section class="flex flex-col gap-md border-b border-outline-variant pb-lg">
+<div class="relative max-w-lg w-full">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none">search</span>
+<input class="w-full pl-10 pr-4 py-2 bg-surface-container-lowest border border-outline-variant rounded-lg font-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent placeholder:text-outline transition-shadow" placeholder="Cari aplikasi..." type="text"/>
+</div>
+<div class="flex flex-wrap gap-sm">
+<button class="px-4 py-1.5 bg-primary text-on-primary rounded-full font-label-md text-label-md transition-colors shadow-sm">Semua</button>
+<button class="px-4 py-1.5 bg-surface-container text-on-surface-variant border border-outline-variant rounded-full font-label-md text-label-md hover:bg-surface-container-high transition-colors">HRIS</button>
+<button class="px-4 py-1.5 bg-surface-container text-on-surface-variant border border-outline-variant rounded-full font-label-md text-label-md hover:bg-surface-container-high transition-colors">Perbankan</button>
+<button class="px-4 py-1.5 bg-surface-container text-on-surface-variant border border-outline-variant rounded-full font-label-md text-label-md hover:bg-surface-container-high transition-colors">CRM</button>
+<button class="px-4 py-1.5 bg-surface-container text-on-surface-variant border border-outline-variant rounded-full font-label-md text-label-md hover:bg-surface-container-high transition-colors">Dokumen</button>
+<button class="px-4 py-1.5 bg-surface-container text-on-surface-variant border border-outline-variant rounded-full font-label-md text-label-md hover:bg-surface-container-high transition-colors">Channeling</button>
+<button class="px-4 py-1.5 bg-surface-container text-on-surface-variant border border-outline-variant rounded-full font-label-md text-label-md hover:bg-surface-container-high transition-colors">Mobile</button>
+</div>
+</section>
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-md flex flex-col gap-sm hover:shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06)] transition-all duration-300 group">
+<div class="flex justify-between items-start">
+<div class="w-12 h-12 rounded-lg bg-surface-container overflow-hidden flex items-center justify-center border border-outline-variant">
+<img class="w-full h-full object-cover" data-alt="A clean, minimalist 3D rendering of an abstract blue corporate icon representing human resources, floating in a bright, soft-lit white studio environment. High resolution, modern enterprise UI style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDG5onik6UmShtNvs08pYcb1SjWSXu-aeuvFy-Z5SL0ddNrodUdrYRej0gYrh94upxa165N2E5B48_ut_qqXKlCm37nmzPz1EuvvnmZGeKusRv5cZJJS5xEEY8AHxZX768aMupSvvytsuLkrHMZTMtabKBW7U4psQGkJywW6ON6AZc0YjlIKzWSPPnV69P1PHuhg518ilfRv3w37OLJwiTNKUj1b_qe-3h00l4eBL8v3w7Wn6KUy7b-5ZXyQc9xvJVRMFoiqXpOVjo"/>
+</div>
+<span class="bg-primary-fixed text-on-primary-fixed font-label-md text-label-md px-2 py-0.5 rounded flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary block"></span> Demo Aktif
+                    </span>
+</div>
+<div class="mt-2">
+<h3 class="font-title-lg text-title-lg text-on-surface group-hover:text-primary transition-colors">HRIS &amp; Absensi</h3>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md mt-1">
+<span>HRIS</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>12 Modul</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow line-clamp-2">
+                    Sistem informasi sumber daya manusia terpadu yang mencakup manajemen kehadiran, cuti, lembur, dan penggajian.
+                </p>
+<button class="w-full mt-4 bg-transparent border border-primary text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md py-2 rounded-lg transition-colors flex items-center justify-center gap-2">
+                    Masuk Demo <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-md flex flex-col gap-sm hover:shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06)] transition-all duration-300 group">
+<div class="flex justify-between items-start">
+<div class="w-12 h-12 rounded-lg bg-surface-container overflow-hidden flex items-center justify-center border border-outline-variant">
+<img class="w-full h-full object-cover" data-alt="A precise, clean 3D isometric illustration of digital folders and secure document storage servers, rendered in a bright corporate style using a palette of crisp whites and primary blues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvkJssdONfsXVPckXiaDSlWBo-GEs_6th48mRTV_WK6RpSWhJaJE4qhSVYeJ40D6V0nK3rCHCEN3tPv5WUsyuMx6ri52NyPs6nEnltRMyaC2rrx3IsHOiynZr4a_pMgD4yT2GvR9BJwiMWtRZ4NNLMeEcj5-CSWE1rFnxn4Y3Sg9393eN8OFtfLUVRBpUL7f85MIc5uDOwq67dadlIMg2SW6cDwCTk8i_o-E-P_Wbxaz9QnvbbcB0BDYouW-b65UJAmFTMT2mee3g"/>
+</div>
+<span class="bg-primary-fixed text-on-primary-fixed font-label-md text-label-md px-2 py-0.5 rounded flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary block"></span> Demo Aktif
+                    </span>
+</div>
+<div class="mt-2">
+<h3 class="font-title-lg text-title-lg text-on-surface group-hover:text-primary transition-colors">SIARDI</h3>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md mt-1">
+<span>Dokumen</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>5 Modul</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow line-clamp-2">
+                    Platform arsip digital cerdas untuk pengindeksan, pencarian, dan pengamanan dokumen institusi dengan hak akses berlapis.
+                </p>
+<button class="w-full mt-4 bg-transparent border border-primary text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md py-2 rounded-lg transition-colors flex items-center justify-center gap-2">
+                    Masuk Demo <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-md flex flex-col gap-sm hover:shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06)] transition-all duration-300 group">
+<div class="flex justify-between items-start">
+<div class="w-12 h-12 rounded-lg bg-surface-container overflow-hidden flex items-center justify-center border border-outline-variant">
+<img class="w-full h-full object-cover" data-alt="A minimalist UI icon depicting interconnected people nodes in a corporate network, styled as a polished 3D glassmorphism object against a stark white background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0qzXlHrEdjju_DTgLse8wHAZE9zJbwORRlxsPBQhPeFNONbTAgjWYZWUyiNnAbWiJTf-v4ORpSU594IlW1kwv_pJSFs0d48wdYw2-ovUNpt65MFR3GRVEtvZYcuAdwAD9zwpIe2n9TCtDsY0ElQRrHd4MhKxJG-tjKBghCVThA7sb3570cNgpK2028D4eo2vDW94M8tFAUCFVirKMtrpO0oKbsMwQJNhHIBt4We0sFtE_pX6zwiYGjDRjImfGfkLl-dchHmjSaW8"/>
+</div>
+<span class="bg-primary-fixed text-on-primary-fixed font-label-md text-label-md px-2 py-0.5 rounded flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary block"></span> Demo Aktif
+                    </span>
+</div>
+<div class="mt-2">
+<h3 class="font-title-lg text-title-lg text-on-surface group-hover:text-primary transition-colors">CRM</h3>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md mt-1">
+<span>CRM</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>8 Modul</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow line-clamp-2">
+                    Manajemen hubungan pelanggan komprehensif untuk melacak prospek, interaksi layanan, dan pipeline penjualan perusahaan.
+                </p>
+<button class="w-full mt-4 bg-transparent border border-primary text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md py-2 rounded-lg transition-colors flex items-center justify-center gap-2">
+                    Masuk Demo <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-md flex flex-col gap-sm hover:shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06)] transition-all duration-300 group">
+<div class="flex justify-between items-start">
+<div class="w-12 h-12 rounded-lg bg-surface-container overflow-hidden flex items-center justify-center border border-outline-variant">
+<img class="w-full h-full object-cover" data-alt="A professional architectural blueprint or fintech vault symbol rendered as an abstract 3D asset. Features metallic textures, blue accents, and sits on a bright, minimalist surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDH_zTyPREQaL-lmsSSYxPns67hwjFtNyfXlroDEE2xUHG9-s_JGFi8pQpIwFw-N9t576MTM7PTmjA3ZjvprbIK0ceD48vxiiYO6Ba1k91IgCsb6CkGq_z9faKdym15GHJx5n5koJYNTFPuLvET2Iwbz3cpS9IezN-DlZS1bTYYCmxVYDoZiPzGFJd23gKDBQ8vifAMIKNQEdZvY2FxzYoxZ69upBOPX8BoQANC_gL1_DKQuMg1MQ96esTZJDn6IvEh7-wHtHTCkZY"/>
+</div>
+<span class="bg-primary-fixed text-on-primary-fixed font-label-md text-label-md px-2 py-0.5 rounded flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary block"></span> Demo Aktif
+                    </span>
+</div>
+<div class="mt-2">
+<h3 class="font-title-lg text-title-lg text-on-surface group-hover:text-primary transition-colors">Core Banking Koperasi</h3>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md mt-1">
+<span>Perbankan</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>15 Modul</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow line-clamp-2">
+                    Sistem operasi perbankan inti yang dirancang khusus untuk lembaga keuangan mikro dan koperasi dengan standar keamanan tinggi.
+                </p>
+<button class="w-full mt-4 bg-transparent border border-primary text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md py-2 rounded-lg transition-colors flex items-center justify-center gap-2">
+                    Masuk Demo <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-md flex flex-col gap-sm hover:shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06)] transition-all duration-300 group">
+<div class="flex justify-between items-start">
+<div class="w-12 h-12 rounded-lg bg-surface-container overflow-hidden flex items-center justify-center border border-outline-variant">
+<img class="w-full h-full object-cover" data-alt="An elegant, abstract representation of a financial transaction or calculator interface in a clean 3D style. The lighting is bright and evenly distributed to match a modern corporate UI." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXBJMsbxqMgDc9r8rTHljenaqKi0mWYbl7aMq6wYxIfIrY01dX6fLcA6T7Ll7RKkYpAZPdpkmoPx_Lk-UBPNnSj0GJ0BU8kRDWkG0h5w04XlAMxJqvWwXBt8VkcnDpHvjOvfMocceFiWUdF0gYE__JQfsmgsCBlQfll0Hj6UawZ5XtQZSMNa0HeUK6B3Ks-6goyR1F-agcrKI7NyJD-64b0vEOaSsDzGcDFkilMXTIUoe0S78kmKIN6bSvwqbEVZuxOIze14Hvees"/>
+</div>
+<span class="bg-primary-fixed text-on-primary-fixed font-label-md text-label-md px-2 py-0.5 rounded flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary block"></span> Demo Aktif
+                    </span>
+</div>
+<div class="mt-2">
+<h3 class="font-title-lg text-title-lg text-on-surface group-hover:text-primary transition-colors">Aplikasi Bantuan Potong</h3>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md mt-1">
+<span>Perbankan</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>4 Modul</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow line-clamp-2">
+                    Modul pendukung transaksi perbankan untuk otomasi pemotongan angsuran dan rekonsiliasi data penggajian instansi.
+                </p>
+<button class="w-full mt-4 bg-transparent border border-primary text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md py-2 rounded-lg transition-colors flex items-center justify-center gap-2">
+                    Masuk Demo <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 6 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-md flex flex-col gap-sm hover:shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06)] transition-all duration-300 group">
+<div class="flex justify-between items-start">
+<div class="w-12 h-12 rounded-lg bg-surface-container overflow-hidden flex items-center justify-center border border-outline-variant">
+<img class="w-full h-full object-cover" data-alt="A modern, abstract 3D icon of overlapping geometric shapes representing synergy and teamwork, utilizing a sleek white and corporate blue color palette. High resolution studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrAjNzqqqFoeYzjOIJnQW_UhK-wPMMXXntmqL6ebb3_0sQHBQu9O-H-jB5vOWBRB-UFdfe-yJxieNsadDB8cMQdgqtJW5F8O5VezXzWj5LDQss76yC-w2dLfhprnZMKxet0vurrkjg6QjWniwn-aOqPXjHAdU0mscQlQKTfPBmr82BPl1PvI0fchqmSW858dQFlKcyOi3_btGInNLgAG6ao1cdGw3cwqD42tHWmJKpmZoihvCI1ZbBGtzdSbQV6ucU4MYktiPkwHc"/>
+</div>
+<span class="bg-primary-fixed text-on-primary-fixed font-label-md text-label-md px-2 py-0.5 rounded flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary block"></span> Demo Aktif
+                    </span>
+</div>
+<div class="mt-2">
+<h3 class="font-title-lg text-title-lg text-on-surface group-hover:text-primary transition-colors">Sinergi</h3>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md mt-1">
+<span>Semua</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>6 Modul</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow line-clamp-2">
+                    Platform kolaborasi internal untuk manajemen tugas terpusat, komunikasi tim, dan pemantauan metrik operasional harian.
+                </p>
+<button class="w-full mt-4 bg-transparent border border-primary text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md py-2 rounded-lg transition-colors flex items-center justify-center gap-2">
+                    Masuk Demo <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 7 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-md flex flex-col gap-sm hover:shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06)] transition-all duration-300 group">
+<div class="flex justify-between items-start">
+<div class="w-12 h-12 rounded-lg bg-surface-container overflow-hidden flex items-center justify-center border border-outline-variant">
+<img class="w-full h-full object-cover" data-alt="A sophisticated digital integration icon shown as a 3D glass-like conduit passing data, set against a pristine, light-themed tech environment with deep blue accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaZSx9ht69iSNEuWHMb1pu12IClRMl72PcwQF91Cz6-1lqznJSz-WVGYCBPUB2yYAwgCDph-ZK61DFsYX_cBErQEpjseshF3xaYMqzC0sFfQGIfS08EMVPkFvoUyiUiDrBtFA0i7_00sJ7syVlzmKZtKqTl6evb3Gl3zIBRt9lHFpRGAWIbOCL9yABiQmL0pqNJt13E7uUaMHzNJKJlkrFgXm_XlgaS4s9C9ABnNZRhb6k9e6nNK-_tzRQ1_Nt1EcYW0yPqz6YJng"/>
+</div>
+<span class="bg-primary-fixed text-on-primary-fixed font-label-md text-label-md px-2 py-0.5 rounded flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary block"></span> Demo Aktif
+                    </span>
+</div>
+<div class="mt-2">
+<h3 class="font-title-lg text-title-lg text-on-surface group-hover:text-primary transition-colors">BTN Channeling</h3>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md mt-1">
+<span>Channeling</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>3 Modul</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow line-clamp-2">
+                    Gateway integrasi aman untuk komunikasi data dua arah yang stabil antara sistem internal dengan ekosistem perbankan eksternal.
+                </p>
+<button class="w-full mt-4 bg-transparent border border-primary text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md py-2 rounded-lg transition-colors flex items-center justify-center gap-2">
+                    Masuk Demo <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 8 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-md flex flex-col gap-sm hover:shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06)] transition-all duration-300 group">
+<div class="flex justify-between items-start">
+<div class="w-12 h-12 rounded-lg bg-surface-container overflow-hidden flex items-center justify-center border border-outline-variant">
+<img class="w-full h-full object-cover" data-alt="A crisp, modern representation of a corporate website layout displayed on a stylized 3D display screen. The image uses a clean, high-key light mode aesthetic with structural blue tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvYlw5hv5p3Mn7PjzmQ1lW9AmZ-DY3jpy9sKEO4Pa_h79zKizy4EhTDeRkZOmKxhdnHE26uL19dYn7xpd_01J6W1QxgnFfqI2Qu-dl6wUL1tGXoB6qiUASW1khbEHljI8XmMI30A0uPD3cBgt1DUd-jDvsivGC3Nck16RBUi91XnYUY_c9ySSzmdj11PfoAqR_9iov82N1qC-cIKbltLcq8oIaWB18h6aBml7Nu7LH1v__swuwaPkiLA46VRdBtivWO7qTrizF3ZM"/>
+</div>
+<span class="bg-primary-fixed text-on-primary-fixed font-label-md text-label-md px-2 py-0.5 rounded flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary block"></span> Demo Aktif
+                    </span>
+</div>
+<div class="mt-2">
+<h3 class="font-title-lg text-title-lg text-on-surface group-hover:text-primary transition-colors">Web Company Profile</h3>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md mt-1">
+<span>Semua</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>2 Modul</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow line-clamp-2">
+                    Sistem manajemen konten dinamis (CMS) untuk portal informasi publik perusahaan dengan performa tinggi dan desain responsif.
+                </p>
+<button class="w-full mt-4 bg-transparent border border-primary text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md py-2 rounded-lg transition-colors flex items-center justify-center gap-2">
+                    Masuk Demo <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</section>
+</main>
+<footer class="w-full px-margin-desktop py-xl flex flex-col md:flex-row justify-between items-center bg-surface-container-highest border-t border-outline-variant mt-xl">
+<div class="font-body-md text-body-md text-primary dark:text-primary-fixed-dim mb-4 md:mb-0">
+            © 2024 Moduvox Enterprise. Hak Cipta Dilindungi.
+        </div>
+<div class="flex items-center gap-lg font-body-md text-body-md">
+<a class="text-on-surface-variant hover:text-primary transition-all duration-300" href="#">Privasi</a>
+<a class="text-on-surface-variant hover:text-primary transition-all duration-300" href="#">Syarat &amp; Ketentuan</a>
+<a class="text-on-surface-variant hover:text-primary transition-all duration-300" href="#">Peta Situs</a>
+</div>
+</footer>
+</body></html>
