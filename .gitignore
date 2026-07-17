@@ -27,7 +27,6 @@ dist-ssr
 # Project Portofolio (Laravel apps via git clone)
 # Ignore semua isi folder project, kecuali .gitkeep dan README
 # ============================
-projects/hris/*
 projects/siardi/*
 projects/crm/*
 projects/core-banking/*
