@@ -1,0 +1,5 @@
+// Copy this file to `ios/Flutter/MapsKeys.local.xcconfig` (untracked) if you don't want to commit keys.
+// Then update Debug.xcconfig/Release.xcconfig to include the local file instead.
+//
+// iOS key should be restricted by bundle id.
+MAPS_API_KEY_IOS=AIzaSyBhYoES3XeiethKGdk_JouulJTtfkjeM0Y

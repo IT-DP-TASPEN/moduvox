@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "HRIS (Production)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": [
+        "--dart-define",
+        "API_BASE_URL=https://hris.bankdptaspen.co.id/api"
+      ]
+    },
+    {
+      "name": "HRIS (Development)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": [
+        "--dart-define",
+        "API_BASE_URL=http://192.168.1.18:8000/api"
+      ]
+    }
+  ]
+}

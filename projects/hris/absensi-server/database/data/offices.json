@@ -1,0 +1,50 @@
+[
+    {
+        "code": "001",
+        "name": "Kantor Pusat Operasional",
+        "address": "Kpg. Ters. Buah Batu No. 830, Kupang 45194, Jabar",
+        "latitude": -6.284879,
+        "longitude": 106.91035,
+        "radius": 20
+    },
+    {
+        "code": "000",
+        "name": "KC Bandung",
+        "address": "Jr. Ciwastra No. 991, Banjar 54435, Pabar",
+        "latitude": -6.243441,
+        "longitude": 106.993533,
+        "radius": 40
+    },
+    {
+        "code": "002",
+        "name": "KC Surabaya",
+        "address": "Gg. Taman No. 718, Tebing Tinggi 43749, Papua",
+        "latitude": -6.569722,
+        "longitude": 106.812955,
+        "radius": 20
+    },
+    {
+        "code": "003",
+        "name": "KC Medan",
+        "address": "Kpg. Gatot Subroto No. 157, Palangka Raya 23400, Jabar",
+        "latitude": -6.393294,
+        "longitude": 106.822631,
+        "radius": 20
+    },
+    {
+        "code": "004",
+        "name": "KC Semarang",
+        "address": "Jr. Suniaraja No. 649, Sorong 56491, NTB",
+        "latitude": -6.186775,
+        "longitude": 106.659994,
+        "radius": 20
+    },
+    {
+        "code": "005",
+        "name": "KC Makassar",
+        "address": "Gg. Kyai Mojo No. 42, Bengkulu 28977, Aceh",
+        "latitude": -6.220241,
+        "longitude": 106.923132,
+        "radius": 20
+    }
+]

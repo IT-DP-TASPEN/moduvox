@@ -1,0 +1,5 @@
+## Copy this file to `android/maps.properties` (untracked) and fill in your key.
+## Create 3 different keys in Google Cloud Console (Android / iOS / Web).
+## Android key should be restricted by package name + SHA-1 certificate.
+
+MAPS_API_KEY_ANDROID=

@@ -1,0 +1,1502 @@
+[
+    {
+        "skg": 1,
+        "grade": "I",
+        "amount": "3339358.00"
+    },
+    {
+        "skg": 2,
+        "grade": "I",
+        "amount": "3425608.00"
+    },
+    {
+        "skg": 3,
+        "grade": "I",
+        "amount": "3511858.00"
+    },
+    {
+        "skg": 4,
+        "grade": "I",
+        "amount": "3598108.00"
+    },
+    {
+        "skg": 5,
+        "grade": "I",
+        "amount": "3684358.00"
+    },
+    {
+        "skg": 6,
+        "grade": "I",
+        "amount": "3770608.00"
+    },
+    {
+        "skg": 7,
+        "grade": "I",
+        "amount": "3856858.00"
+    },
+    {
+        "skg": 8,
+        "grade": "I",
+        "amount": "3943108.00"
+    },
+    {
+        "skg": 9,
+        "grade": "I",
+        "amount": "4029358.00"
+    },
+    {
+        "skg": 10,
+        "grade": "I",
+        "amount": "4115608.00"
+    },
+    {
+        "skg": 11,
+        "grade": "I",
+        "amount": "4201858.00"
+    },
+    {
+        "skg": 12,
+        "grade": "I",
+        "amount": "4288108.00"
+    },
+    {
+        "skg": 13,
+        "grade": "I",
+        "amount": "4374358.00"
+    },
+    {
+        "skg": 14,
+        "grade": "I",
+        "amount": "4460608.00"
+    },
+    {
+        "skg": 15,
+        "grade": "I",
+        "amount": "4546858.00"
+    },
+    {
+        "skg": 16,
+        "grade": "I",
+        "amount": "4633108.00"
+    },
+    {
+        "skg": 17,
+        "grade": "I",
+        "amount": "4719358.00"
+    },
+    {
+        "skg": 18,
+        "grade": "I",
+        "amount": "4805608.00"
+    },
+    {
+        "skg": 19,
+        "grade": "I",
+        "amount": "4891858.00"
+    },
+    {
+        "skg": 20,
+        "grade": "I",
+        "amount": "4978108.00"
+    },
+    {
+        "skg": 21,
+        "grade": "I",
+        "amount": "5064358.00"
+    },
+    {
+        "skg": 22,
+        "grade": "I",
+        "amount": "5150608.00"
+    },
+    {
+        "skg": 23,
+        "grade": "I",
+        "amount": "5236858.00"
+    },
+    {
+        "skg": 24,
+        "grade": "I",
+        "amount": "5323108.00"
+    },
+    {
+        "skg": 25,
+        "grade": "I",
+        "amount": "5409358.00"
+    },
+    {
+        "skg": 26,
+        "grade": "I",
+        "amount": "5495608.00"
+    },
+    {
+        "skg": 27,
+        "grade": "I",
+        "amount": "5581858.00"
+    },
+    {
+        "skg": 28,
+        "grade": "I",
+        "amount": "5668108.00"
+    },
+    {
+        "skg": 29,
+        "grade": "I",
+        "amount": "5754358.00"
+    },
+    {
+        "skg": 30,
+        "grade": "I",
+        "amount": "5840608.00"
+    },
+    {
+        "skg": 1,
+        "grade": "II",
+        "amount": "3569358.00"
+    },
+    {
+        "skg": 2,
+        "grade": "II",
+        "amount": "3684358.00"
+    },
+    {
+        "skg": 3,
+        "grade": "II",
+        "amount": "3799358.00"
+    },
+    {
+        "skg": 4,
+        "grade": "II",
+        "amount": "3914358.00"
+    },
+    {
+        "skg": 5,
+        "grade": "II",
+        "amount": "4029358.00"
+    },
+    {
+        "skg": 6,
+        "grade": "II",
+        "amount": "4144358.00"
+    },
+    {
+        "skg": 7,
+        "grade": "II",
+        "amount": "4259358.00"
+    },
+    {
+        "skg": 8,
+        "grade": "II",
+        "amount": "4374358.00"
+    },
+    {
+        "skg": 9,
+        "grade": "II",
+        "amount": "4489358.00"
+    },
+    {
+        "skg": 10,
+        "grade": "II",
+        "amount": "4604358.00"
+    },
+    {
+        "skg": 11,
+        "grade": "II",
+        "amount": "4719358.00"
+    },
+    {
+        "skg": 12,
+        "grade": "II",
+        "amount": "4834358.00"
+    },
+    {
+        "skg": 13,
+        "grade": "II",
+        "amount": "4949358.00"
+    },
+    {
+        "skg": 14,
+        "grade": "II",
+        "amount": "5064358.00"
+    },
+    {
+        "skg": 15,
+        "grade": "II",
+        "amount": "5179358.00"
+    },
+    {
+        "skg": 16,
+        "grade": "II",
+        "amount": "5294358.00"
+    },
+    {
+        "skg": 17,
+        "grade": "II",
+        "amount": "5409358.00"
+    },
+    {
+        "skg": 18,
+        "grade": "II",
+        "amount": "5524358.00"
+    },
+    {
+        "skg": 19,
+        "grade": "II",
+        "amount": "5639358.00"
+    },
+    {
+        "skg": 20,
+        "grade": "II",
+        "amount": "5754358.00"
+    },
+    {
+        "skg": 21,
+        "grade": "II",
+        "amount": "5869358.00"
+    },
+    {
+        "skg": 22,
+        "grade": "II",
+        "amount": "5984358.00"
+    },
+    {
+        "skg": 23,
+        "grade": "II",
+        "amount": "6099358.00"
+    },
+    {
+        "skg": 24,
+        "grade": "II",
+        "amount": "6214358.00"
+    },
+    {
+        "skg": 25,
+        "grade": "II",
+        "amount": "6329358.00"
+    },
+    {
+        "skg": 26,
+        "grade": "II",
+        "amount": "6444358.00"
+    },
+    {
+        "skg": 27,
+        "grade": "II",
+        "amount": "6559358.00"
+    },
+    {
+        "skg": 28,
+        "grade": "II",
+        "amount": "6674358.00"
+    },
+    {
+        "skg": 29,
+        "grade": "II",
+        "amount": "6789358.00"
+    },
+    {
+        "skg": 30,
+        "grade": "II",
+        "amount": "6904358.00"
+    },
+    {
+        "skg": 1,
+        "grade": "III",
+        "amount": "3799358.00"
+    },
+    {
+        "skg": 2,
+        "grade": "III",
+        "amount": "3943108.00"
+    },
+    {
+        "skg": 3,
+        "grade": "III",
+        "amount": "4086858.00"
+    },
+    {
+        "skg": 4,
+        "grade": "III",
+        "amount": "4230608.00"
+    },
+    {
+        "skg": 5,
+        "grade": "III",
+        "amount": "4374358.00"
+    },
+    {
+        "skg": 6,
+        "grade": "III",
+        "amount": "4518108.00"
+    },
+    {
+        "skg": 7,
+        "grade": "III",
+        "amount": "4661858.00"
+    },
+    {
+        "skg": 8,
+        "grade": "III",
+        "amount": "4805608.00"
+    },
+    {
+        "skg": 9,
+        "grade": "III",
+        "amount": "4949358.00"
+    },
+    {
+        "skg": 10,
+        "grade": "III",
+        "amount": "5093108.00"
+    },
+    {
+        "skg": 11,
+        "grade": "III",
+        "amount": "5236858.00"
+    },
+    {
+        "skg": 12,
+        "grade": "III",
+        "amount": "5380608.00"
+    },
+    {
+        "skg": 13,
+        "grade": "III",
+        "amount": "5524358.00"
+    },
+    {
+        "skg": 14,
+        "grade": "III",
+        "amount": "5668108.00"
+    },
+    {
+        "skg": 15,
+        "grade": "III",
+        "amount": "5811858.00"
+    },
+    {
+        "skg": 16,
+        "grade": "III",
+        "amount": "5955608.00"
+    },
+    {
+        "skg": 17,
+        "grade": "III",
+        "amount": "6099358.00"
+    },
+    {
+        "skg": 18,
+        "grade": "III",
+        "amount": "6243108.00"
+    },
+    {
+        "skg": 19,
+        "grade": "III",
+        "amount": "6386858.00"
+    },
+    {
+        "skg": 20,
+        "grade": "III",
+        "amount": "6530608.00"
+    },
+    {
+        "skg": 21,
+        "grade": "III",
+        "amount": "6674358.00"
+    },
+    {
+        "skg": 22,
+        "grade": "III",
+        "amount": "6818108.00"
+    },
+    {
+        "skg": 23,
+        "grade": "III",
+        "amount": "6961858.00"
+    },
+    {
+        "skg": 24,
+        "grade": "III",
+        "amount": "7105608.00"
+    },
+    {
+        "skg": 25,
+        "grade": "III",
+        "amount": "7249358.00"
+    },
+    {
+        "skg": 26,
+        "grade": "III",
+        "amount": "7393108.00"
+    },
+    {
+        "skg": 27,
+        "grade": "III",
+        "amount": "7536858.00"
+    },
+    {
+        "skg": 28,
+        "grade": "III",
+        "amount": "7680608.00"
+    },
+    {
+        "skg": 29,
+        "grade": "III",
+        "amount": "7824358.00"
+    },
+    {
+        "skg": 30,
+        "grade": "III",
+        "amount": "7968108.00"
+    },
+    {
+        "skg": 1,
+        "grade": "IV",
+        "amount": "4029358.00"
+    },
+    {
+        "skg": 2,
+        "grade": "IV",
+        "amount": "4201858.00"
+    },
+    {
+        "skg": 3,
+        "grade": "IV",
+        "amount": "4374358.00"
+    },
+    {
+        "skg": 4,
+        "grade": "IV",
+        "amount": "4546858.00"
+    },
+    {
+        "skg": 5,
+        "grade": "IV",
+        "amount": "4719358.00"
+    },
+    {
+        "skg": 6,
+        "grade": "IV",
+        "amount": "4891858.00"
+    },
+    {
+        "skg": 7,
+        "grade": "IV",
+        "amount": "5064358.00"
+    },
+    {
+        "skg": 8,
+        "grade": "IV",
+        "amount": "5236858.00"
+    },
+    {
+        "skg": 9,
+        "grade": "IV",
+        "amount": "5409358.00"
+    },
+    {
+        "skg": 10,
+        "grade": "IV",
+        "amount": "5581858.00"
+    },
+    {
+        "skg": 11,
+        "grade": "IV",
+        "amount": "5754358.00"
+    },
+    {
+        "skg": 12,
+        "grade": "IV",
+        "amount": "5926858.00"
+    },
+    {
+        "skg": 13,
+        "grade": "IV",
+        "amount": "6099358.00"
+    },
+    {
+        "skg": 14,
+        "grade": "IV",
+        "amount": "6271858.00"
+    },
+    {
+        "skg": 15,
+        "grade": "IV",
+        "amount": "6444358.00"
+    },
+    {
+        "skg": 16,
+        "grade": "IV",
+        "amount": "6616858.00"
+    },
+    {
+        "skg": 17,
+        "grade": "IV",
+        "amount": "6789358.00"
+    },
+    {
+        "skg": 18,
+        "grade": "IV",
+        "amount": "6961858.00"
+    },
+    {
+        "skg": 19,
+        "grade": "IV",
+        "amount": "7134358.00"
+    },
+    {
+        "skg": 20,
+        "grade": "IV",
+        "amount": "7306858.00"
+    },
+    {
+        "skg": 21,
+        "grade": "IV",
+        "amount": "7479358.00"
+    },
+    {
+        "skg": 22,
+        "grade": "IV",
+        "amount": "7651858.00"
+    },
+    {
+        "skg": 23,
+        "grade": "IV",
+        "amount": "7824358.00"
+    },
+    {
+        "skg": 24,
+        "grade": "IV",
+        "amount": "7996858.00"
+    },
+    {
+        "skg": 25,
+        "grade": "IV",
+        "amount": "8169358.00"
+    },
+    {
+        "skg": 26,
+        "grade": "IV",
+        "amount": "8341858.00"
+    },
+    {
+        "skg": 27,
+        "grade": "IV",
+        "amount": "8514358.00"
+    },
+    {
+        "skg": 28,
+        "grade": "IV",
+        "amount": "8686858.00"
+    },
+    {
+        "skg": 29,
+        "grade": "IV",
+        "amount": "8859358.00"
+    },
+    {
+        "skg": 30,
+        "grade": "IV",
+        "amount": "9031858.00"
+    },
+    {
+        "skg": 1,
+        "grade": "V",
+        "amount": "4259358.00"
+    },
+    {
+        "skg": 2,
+        "grade": "V",
+        "amount": "4460608.00"
+    },
+    {
+        "skg": 3,
+        "grade": "V",
+        "amount": "4661858.00"
+    },
+    {
+        "skg": 4,
+        "grade": "V",
+        "amount": "4863108.00"
+    },
+    {
+        "skg": 5,
+        "grade": "V",
+        "amount": "5064358.00"
+    },
+    {
+        "skg": 6,
+        "grade": "V",
+        "amount": "5265608.00"
+    },
+    {
+        "skg": 7,
+        "grade": "V",
+        "amount": "5466858.00"
+    },
+    {
+        "skg": 8,
+        "grade": "V",
+        "amount": "5668108.00"
+    },
+    {
+        "skg": 9,
+        "grade": "V",
+        "amount": "5869358.00"
+    },
+    {
+        "skg": 10,
+        "grade": "V",
+        "amount": "6070608.00"
+    },
+    {
+        "skg": 11,
+        "grade": "V",
+        "amount": "6271858.00"
+    },
+    {
+        "skg": 12,
+        "grade": "V",
+        "amount": "6473108.00"
+    },
+    {
+        "skg": 13,
+        "grade": "V",
+        "amount": "6674358.00"
+    },
+    {
+        "skg": 14,
+        "grade": "V",
+        "amount": "6875608.00"
+    },
+    {
+        "skg": 15,
+        "grade": "V",
+        "amount": "7076858.00"
+    },
+    {
+        "skg": 16,
+        "grade": "V",
+        "amount": "7278108.00"
+    },
+    {
+        "skg": 17,
+        "grade": "V",
+        "amount": "7479358.00"
+    },
+    {
+        "skg": 18,
+        "grade": "V",
+        "amount": "7680608.00"
+    },
+    {
+        "skg": 19,
+        "grade": "V",
+        "amount": "7881858.00"
+    },
+    {
+        "skg": 20,
+        "grade": "V",
+        "amount": "8083108.00"
+    },
+    {
+        "skg": 21,
+        "grade": "V",
+        "amount": "8284358.00"
+    },
+    {
+        "skg": 22,
+        "grade": "V",
+        "amount": "8485608.00"
+    },
+    {
+        "skg": 23,
+        "grade": "V",
+        "amount": "8686858.00"
+    },
+    {
+        "skg": 24,
+        "grade": "V",
+        "amount": "8888108.00"
+    },
+    {
+        "skg": 25,
+        "grade": "V",
+        "amount": "9089358.00"
+    },
+    {
+        "skg": 26,
+        "grade": "V",
+        "amount": "9290608.00"
+    },
+    {
+        "skg": 27,
+        "grade": "V",
+        "amount": "9491858.00"
+    },
+    {
+        "skg": 28,
+        "grade": "V",
+        "amount": "9693108.00"
+    },
+    {
+        "skg": 29,
+        "grade": "V",
+        "amount": "9894358.00"
+    },
+    {
+        "skg": 30,
+        "grade": "V",
+        "amount": "10095608.00"
+    },
+    {
+        "skg": 1,
+        "grade": "VI",
+        "amount": "4489358.00"
+    },
+    {
+        "skg": 2,
+        "grade": "VI",
+        "amount": "4748108.00"
+    },
+    {
+        "skg": 3,
+        "grade": "VI",
+        "amount": "5006858.00"
+    },
+    {
+        "skg": 4,
+        "grade": "VI",
+        "amount": "5265608.00"
+    },
+    {
+        "skg": 5,
+        "grade": "VI",
+        "amount": "5524358.00"
+    },
+    {
+        "skg": 6,
+        "grade": "VI",
+        "amount": "5783108.00"
+    },
+    {
+        "skg": 7,
+        "grade": "VI",
+        "amount": "6041858.00"
+    },
+    {
+        "skg": 8,
+        "grade": "VI",
+        "amount": "6300608.00"
+    },
+    {
+        "skg": 9,
+        "grade": "VI",
+        "amount": "6559358.00"
+    },
+    {
+        "skg": 10,
+        "grade": "VI",
+        "amount": "6818108.00"
+    },
+    {
+        "skg": 11,
+        "grade": "VI",
+        "amount": "7076858.00"
+    },
+    {
+        "skg": 12,
+        "grade": "VI",
+        "amount": "7335608.00"
+    },
+    {
+        "skg": 13,
+        "grade": "VI",
+        "amount": "7594358.00"
+    },
+    {
+        "skg": 14,
+        "grade": "VI",
+        "amount": "7853108.00"
+    },
+    {
+        "skg": 15,
+        "grade": "VI",
+        "amount": "8111858.00"
+    },
+    {
+        "skg": 16,
+        "grade": "VI",
+        "amount": "8370608.00"
+    },
+    {
+        "skg": 17,
+        "grade": "VI",
+        "amount": "8629358.00"
+    },
+    {
+        "skg": 18,
+        "grade": "VI",
+        "amount": "8888108.00"
+    },
+    {
+        "skg": 19,
+        "grade": "VI",
+        "amount": "9146858.00"
+    },
+    {
+        "skg": 20,
+        "grade": "VI",
+        "amount": "9405608.00"
+    },
+    {
+        "skg": 21,
+        "grade": "VI",
+        "amount": "9664358.00"
+    },
+    {
+        "skg": 22,
+        "grade": "VI",
+        "amount": "9923108.00"
+    },
+    {
+        "skg": 23,
+        "grade": "VI",
+        "amount": "10181858.00"
+    },
+    {
+        "skg": 24,
+        "grade": "VI",
+        "amount": "10440608.00"
+    },
+    {
+        "skg": 25,
+        "grade": "VI",
+        "amount": "10699358.00"
+    },
+    {
+        "skg": 26,
+        "grade": "VI",
+        "amount": "10958108.00"
+    },
+    {
+        "skg": 27,
+        "grade": "VI",
+        "amount": "11216858.00"
+    },
+    {
+        "skg": 28,
+        "grade": "VI",
+        "amount": "11475608.00"
+    },
+    {
+        "skg": 29,
+        "grade": "VI",
+        "amount": "11734358.00"
+    },
+    {
+        "skg": 30,
+        "grade": "VI",
+        "amount": "11993108.00"
+    },
+    {
+        "skg": 1,
+        "grade": "VII",
+        "amount": "4719358.00"
+    },
+    {
+        "skg": 2,
+        "grade": "VII",
+        "amount": "5035608.00"
+    },
+    {
+        "skg": 3,
+        "grade": "VII",
+        "amount": "5351858.00"
+    },
+    {
+        "skg": 4,
+        "grade": "VII",
+        "amount": "5668108.00"
+    },
+    {
+        "skg": 5,
+        "grade": "VII",
+        "amount": "5984358.00"
+    },
+    {
+        "skg": 6,
+        "grade": "VII",
+        "amount": "6300608.00"
+    },
+    {
+        "skg": 7,
+        "grade": "VII",
+        "amount": "6616858.00"
+    },
+    {
+        "skg": 8,
+        "grade": "VII",
+        "amount": "6933108.00"
+    },
+    {
+        "skg": 9,
+        "grade": "VII",
+        "amount": "7249358.00"
+    },
+    {
+        "skg": 10,
+        "grade": "VII",
+        "amount": "7565608.00"
+    },
+    {
+        "skg": 11,
+        "grade": "VII",
+        "amount": "7881858.00"
+    },
+    {
+        "skg": 12,
+        "grade": "VII",
+        "amount": "8198108.00"
+    },
+    {
+        "skg": 13,
+        "grade": "VII",
+        "amount": "8514358.00"
+    },
+    {
+        "skg": 14,
+        "grade": "VII",
+        "amount": "8830608.00"
+    },
+    {
+        "skg": 15,
+        "grade": "VII",
+        "amount": "9146858.00"
+    },
+    {
+        "skg": 16,
+        "grade": "VII",
+        "amount": "9463108.00"
+    },
+    {
+        "skg": 17,
+        "grade": "VII",
+        "amount": "9779358.00"
+    },
+    {
+        "skg": 18,
+        "grade": "VII",
+        "amount": "10095608.00"
+    },
+    {
+        "skg": 19,
+        "grade": "VII",
+        "amount": "10411858.00"
+    },
+    {
+        "skg": 20,
+        "grade": "VII",
+        "amount": "10728108.00"
+    },
+    {
+        "skg": 21,
+        "grade": "VII",
+        "amount": "11044358.00"
+    },
+    {
+        "skg": 22,
+        "grade": "VII",
+        "amount": "11360608.00"
+    },
+    {
+        "skg": 23,
+        "grade": "VII",
+        "amount": "11676858.00"
+    },
+    {
+        "skg": 24,
+        "grade": "VII",
+        "amount": "11993108.00"
+    },
+    {
+        "skg": 25,
+        "grade": "VII",
+        "amount": "12309358.00"
+    },
+    {
+        "skg": 26,
+        "grade": "VII",
+        "amount": "12625608.00"
+    },
+    {
+        "skg": 27,
+        "grade": "VII",
+        "amount": "12941858.00"
+    },
+    {
+        "skg": 28,
+        "grade": "VII",
+        "amount": "13258108.00"
+    },
+    {
+        "skg": 29,
+        "grade": "VII",
+        "amount": "13574358.00"
+    },
+    {
+        "skg": 30,
+        "grade": "VII",
+        "amount": "13890608.00"
+    },
+    {
+        "skg": 1,
+        "grade": "VIII",
+        "amount": "4949358.00"
+    },
+    {
+        "skg": 2,
+        "grade": "VIII",
+        "amount": "5351858.00"
+    },
+    {
+        "skg": 3,
+        "grade": "VIII",
+        "amount": "5754358.00"
+    },
+    {
+        "skg": 4,
+        "grade": "VIII",
+        "amount": "6156858.00"
+    },
+    {
+        "skg": 5,
+        "grade": "VIII",
+        "amount": "6559358.00"
+    },
+    {
+        "skg": 6,
+        "grade": "VIII",
+        "amount": "6961858.00"
+    },
+    {
+        "skg": 7,
+        "grade": "VIII",
+        "amount": "7364358.00"
+    },
+    {
+        "skg": 8,
+        "grade": "VIII",
+        "amount": "7766858.00"
+    },
+    {
+        "skg": 9,
+        "grade": "VIII",
+        "amount": "8169358.00"
+    },
+    {
+        "skg": 10,
+        "grade": "VIII",
+        "amount": "8571858.00"
+    },
+    {
+        "skg": 11,
+        "grade": "VIII",
+        "amount": "8974358.00"
+    },
+    {
+        "skg": 12,
+        "grade": "VIII",
+        "amount": "9376858.00"
+    },
+    {
+        "skg": 13,
+        "grade": "VIII",
+        "amount": "9779358.00"
+    },
+    {
+        "skg": 14,
+        "grade": "VIII",
+        "amount": "10181858.00"
+    },
+    {
+        "skg": 15,
+        "grade": "VIII",
+        "amount": "10584358.00"
+    },
+    {
+        "skg": 16,
+        "grade": "VIII",
+        "amount": "10986858.00"
+    },
+    {
+        "skg": 17,
+        "grade": "VIII",
+        "amount": "11389358.00"
+    },
+    {
+        "skg": 18,
+        "grade": "VIII",
+        "amount": "11791858.00"
+    },
+    {
+        "skg": 19,
+        "grade": "VIII",
+        "amount": "12194358.00"
+    },
+    {
+        "skg": 20,
+        "grade": "VIII",
+        "amount": "12596858.00"
+    },
+    {
+        "skg": 21,
+        "grade": "VIII",
+        "amount": "12999358.00"
+    },
+    {
+        "skg": 22,
+        "grade": "VIII",
+        "amount": "13401858.00"
+    },
+    {
+        "skg": 23,
+        "grade": "VIII",
+        "amount": "13804358.00"
+    },
+    {
+        "skg": 24,
+        "grade": "VIII",
+        "amount": "14206858.00"
+    },
+    {
+        "skg": 25,
+        "grade": "VIII",
+        "amount": "14609358.00"
+    },
+    {
+        "skg": 26,
+        "grade": "VIII",
+        "amount": "15011858.00"
+    },
+    {
+        "skg": 27,
+        "grade": "VIII",
+        "amount": "15414358.00"
+    },
+    {
+        "skg": 28,
+        "grade": "VIII",
+        "amount": "15816858.00"
+    },
+    {
+        "skg": 29,
+        "grade": "VIII",
+        "amount": "16219358.00"
+    },
+    {
+        "skg": 30,
+        "grade": "VIII",
+        "amount": "16621858.00"
+    },
+    {
+        "skg": 1,
+        "grade": "IX",
+        "amount": "5179358.00"
+    },
+    {
+        "skg": 2,
+        "grade": "IX",
+        "amount": "5668108.00"
+    },
+    {
+        "skg": 3,
+        "grade": "IX",
+        "amount": "6156858.00"
+    },
+    {
+        "skg": 4,
+        "grade": "IX",
+        "amount": "6645608.00"
+    },
+    {
+        "skg": 5,
+        "grade": "IX",
+        "amount": "7134358.00"
+    },
+    {
+        "skg": 6,
+        "grade": "IX",
+        "amount": "7623108.00"
+    },
+    {
+        "skg": 7,
+        "grade": "IX",
+        "amount": "8111858.00"
+    },
+    {
+        "skg": 8,
+        "grade": "IX",
+        "amount": "8600608.00"
+    },
+    {
+        "skg": 9,
+        "grade": "IX",
+        "amount": "9089358.00"
+    },
+    {
+        "skg": 10,
+        "grade": "IX",
+        "amount": "9578108.00"
+    },
+    {
+        "skg": 11,
+        "grade": "IX",
+        "amount": "10066858.00"
+    },
+    {
+        "skg": 12,
+        "grade": "IX",
+        "amount": "10555608.00"
+    },
+    {
+        "skg": 13,
+        "grade": "IX",
+        "amount": "11044358.00"
+    },
+    {
+        "skg": 14,
+        "grade": "IX",
+        "amount": "11533108.00"
+    },
+    {
+        "skg": 15,
+        "grade": "IX",
+        "amount": "12021858.00"
+    },
+    {
+        "skg": 16,
+        "grade": "IX",
+        "amount": "12510608.00"
+    },
+    {
+        "skg": 17,
+        "grade": "IX",
+        "amount": "12999358.00"
+    },
+    {
+        "skg": 18,
+        "grade": "IX",
+        "amount": "13488108.00"
+    },
+    {
+        "skg": 19,
+        "grade": "IX",
+        "amount": "13976858.00"
+    },
+    {
+        "skg": 20,
+        "grade": "IX",
+        "amount": "14465608.00"
+    },
+    {
+        "skg": 21,
+        "grade": "IX",
+        "amount": "14954358.00"
+    },
+    {
+        "skg": 22,
+        "grade": "IX",
+        "amount": "15443108.00"
+    },
+    {
+        "skg": 23,
+        "grade": "IX",
+        "amount": "15931858.00"
+    },
+    {
+        "skg": 24,
+        "grade": "IX",
+        "amount": "16420608.00"
+    },
+    {
+        "skg": 25,
+        "grade": "IX",
+        "amount": "16909358.00"
+    },
+    {
+        "skg": 26,
+        "grade": "IX",
+        "amount": "17398108.00"
+    },
+    {
+        "skg": 27,
+        "grade": "IX",
+        "amount": "17886858.00"
+    },
+    {
+        "skg": 28,
+        "grade": "IX",
+        "amount": "18375608.00"
+    },
+    {
+        "skg": 29,
+        "grade": "IX",
+        "amount": "18864358.00"
+    },
+    {
+        "skg": 30,
+        "grade": "IX",
+        "amount": "19353108.00"
+    },
+    {
+        "skg": 1,
+        "grade": "X",
+        "amount": "5409358.00"
+    },
+    {
+        "skg": 2,
+        "grade": "X",
+        "amount": "5984358.00"
+    },
+    {
+        "skg": 3,
+        "grade": "X",
+        "amount": "6559358.00"
+    },
+    {
+        "skg": 4,
+        "grade": "X",
+        "amount": "7134358.00"
+    },
+    {
+        "skg": 5,
+        "grade": "X",
+        "amount": "7709358.00"
+    },
+    {
+        "skg": 6,
+        "grade": "X",
+        "amount": "8284358.00"
+    },
+    {
+        "skg": 7,
+        "grade": "X",
+        "amount": "8859358.00"
+    },
+    {
+        "skg": 8,
+        "grade": "X",
+        "amount": "9434358.00"
+    },
+    {
+        "skg": 9,
+        "grade": "X",
+        "amount": "10009358.00"
+    },
+    {
+        "skg": 10,
+        "grade": "X",
+        "amount": "10584358.00"
+    },
+    {
+        "skg": 11,
+        "grade": "X",
+        "amount": "11159358.00"
+    },
+    {
+        "skg": 12,
+        "grade": "X",
+        "amount": "11734358.00"
+    },
+    {
+        "skg": 13,
+        "grade": "X",
+        "amount": "12309358.00"
+    },
+    {
+        "skg": 14,
+        "grade": "X",
+        "amount": "12884358.00"
+    },
+    {
+        "skg": 15,
+        "grade": "X",
+        "amount": "13459358.00"
+    },
+    {
+        "skg": 16,
+        "grade": "X",
+        "amount": "14034358.00"
+    },
+    {
+        "skg": 17,
+        "grade": "X",
+        "amount": "14609358.00"
+    },
+    {
+        "skg": 18,
+        "grade": "X",
+        "amount": "15184358.00"
+    },
+    {
+        "skg": 19,
+        "grade": "X",
+        "amount": "15759358.00"
+    },
+    {
+        "skg": 20,
+        "grade": "X",
+        "amount": "16334358.00"
+    },
+    {
+        "skg": 21,
+        "grade": "X",
+        "amount": "16909358.00"
+    },
+    {
+        "skg": 22,
+        "grade": "X",
+        "amount": "17484358.00"
+    },
+    {
+        "skg": 23,
+        "grade": "X",
+        "amount": "18059358.00"
+    },
+    {
+        "skg": 24,
+        "grade": "X",
+        "amount": "18634358.00"
+    },
+    {
+        "skg": 25,
+        "grade": "X",
+        "amount": "19209358.00"
+    },
+    {
+        "skg": 26,
+        "grade": "X",
+        "amount": "19784358.00"
+    },
+    {
+        "skg": 27,
+        "grade": "X",
+        "amount": "20359358.00"
+    },
+    {
+        "skg": 28,
+        "grade": "X",
+        "amount": "20934358.00"
+    },
+    {
+        "skg": 29,
+        "grade": "X",
+        "amount": "21509358.00"
+    },
+    {
+        "skg": 30,
+        "grade": "X",
+        "amount": "22084358.00"
+    }
+]
