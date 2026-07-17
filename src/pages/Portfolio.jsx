@@ -10,7 +10,7 @@ const portfolioItems = [
     modules: '12 Modul',
     desc: 'Sistem informasi sumber daya manusia terpadu yang mencakup manajemen kehadiran, cuti, lembur, dan penggajian.',
     img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDG5onik6UmShtNvs08pYcb1SjWSXu-aeuvFy-Z5SL0ddNrodUdrYRej0gYrh94upxa165N2E5B48_ut_qqXKlCm37nmzPz1EuvvnmZGeKusRv5cZJJS5xEEY8AHxZX768aMupSvvytsuLkrHMZTMtabKBW7U4psQGkJywW6ON6AZc0YjlIKzWSPPnV69P1PHuhg518ilfRv3w37OLJwiTNKUj1b_qe-3h00l4eBL8v3w7Wn6KUy7b-5ZXyQc9xvJVRMFoiqXpOVjo',
-    demoUrl: 'http://localhost:8000',
+    demoUrl: 'https://hris.moduvox.com',
     techStack: ['Laravel', 'MySQL', 'Bootstrap'],
     status: 'active',       // active | coming-soon | maintenance
     projectDir: 'projects/hris',
