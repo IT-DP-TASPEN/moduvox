@@ -25,7 +25,7 @@
                         <label class="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">Rate Lembur per Jam (Tetap)</label>
                         <div class="relative">
                             <span class="absolute left-6 top-1/2 -translate-y-1/2 font-bold text-slate-400">Rp</span>
-                            <input type="text" name="overtime_rate_permanent" value="{{ $settings->overtime_rate_permanent }}" class="rupiah-input w-full pl-14 pr-6 py-4 rounded-2xl bg-slate-50 border-none focus:ring-2 focus:ring-brand-blue transition-all font-bold text-slate-700" required>
+                            <input type="text" name="overtime_rate_permanent" value="{{ round($settings->overtime_rate_permanent) }}" class="rupiah-input w-full pl-14 pr-6 py-4 rounded-2xl bg-slate-50 border-none focus:ring-2 focus:ring-brand-blue transition-all font-bold text-slate-700" required>
                         </div>
                     </div>
 
@@ -33,7 +33,7 @@
                         <label class="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">Rate Lembur per Jam (Kontrak)</label>
                         <div class="relative">
                             <span class="absolute left-6 top-1/2 -translate-y-1/2 font-bold text-slate-400">Rp</span>
-                            <input type="text" name="overtime_rate_contract" value="{{ $settings->overtime_rate_contract }}" class="rupiah-input w-full pl-14 pr-6 py-4 rounded-2xl bg-slate-50 border-none focus:ring-2 focus:ring-brand-blue transition-all font-bold text-slate-700" required>
+                            <input type="text" name="overtime_rate_contract" value="{{ round($settings->overtime_rate_contract) }}" class="rupiah-input w-full pl-14 pr-6 py-4 rounded-2xl bg-slate-50 border-none focus:ring-2 focus:ring-brand-blue transition-all font-bold text-slate-700" required>
                         </div>
                     </div>
 
@@ -41,7 +41,7 @@
                         <label class="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">Uang Makan Lembur (per hari lembur)</label>
                         <div class="relative">
                             <span class="absolute left-6 top-1/2 -translate-y-1/2 font-bold text-slate-400">Rp</span>
-                            <input type="text" name="overtime_meal_allowance" value="{{ $settings->overtime_meal_allowance }}" class="rupiah-input w-full pl-14 pr-6 py-4 rounded-2xl bg-slate-50 border-none focus:ring-2 focus:ring-brand-blue transition-all font-bold text-slate-700" required>
+                            <input type="text" name="overtime_meal_allowance" value="{{ round($settings->overtime_meal_allowance) }}" class="rupiah-input w-full pl-14 pr-6 py-4 rounded-2xl bg-slate-50 border-none focus:ring-2 focus:ring-brand-blue transition-all font-bold text-slate-700" required>
                         </div>
                     </div>
 
@@ -138,37 +138,5 @@
     </div>
 </div>
 @push('scripts')
-<script>
-    $(document).ready(function() {
-        // Format angka ke Rupiah saat diketik
-        $('.rupiah-input').on('input', function() {
-            let val = $(this).val().replace(/\D/g, '');
-            $(this).val(formatRupiah(val));
-        });
-
-        // Format awal saat halaman dimuat
-        $('.rupiah-input').each(function() {
-            let val = $(this).val();
-            // Jika ada desimal .00, hapus dulu agar tidak jadi jutaan
-            if (val.includes('.')) {
-                val = Math.floor(parseFloat(val)).toString();
-            }
-            $(this).val(formatRupiah(val));
-        });
-
-        // Bersihkan titik sebelum form dikirim
-        $('form').on('submit', function() {
-            $('.rupiah-input').each(function() {
-                let val = $(this).val().replace(/\D/g, '');
-                $(this).val(val); // Kirim angka murni
-            });
-        });
-
-        function formatRupiah(angka) {
-            if (!angka) return '';
-            return angka.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-        }
-    });
-</script>
 @endpush
 @endsection

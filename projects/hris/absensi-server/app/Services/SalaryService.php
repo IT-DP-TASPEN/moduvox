@@ -161,6 +161,25 @@ class SalaryService
             }
         }
 
+        // 6. Calculate Late Penalty (Potongan Keterlambatan)
+        $lateCount = \App\Models\Attendance::where('user_id', $user->id)
+            ->where('type', 'masuk')
+            ->where('status', 'late')
+            ->whereMonth('created_at', $month)
+            ->whereYear('created_at', $year)
+            ->count();
+            
+        if ($lateCount > 0) {
+            $latePenalty = $lateCount * 50000; // 50,000 per late occurrence
+            $dynamicComponentsBreakdown[] = [
+                'id' => 'late_penalty',
+                'name' => 'Potongan Keterlambatan (' . $lateCount . 'x)',
+                'amount' => $latePenalty,
+                'category' => 'deduction'
+            ];
+            $dynamicDeductionsTotal += $latePenalty;
+        }
+
         $taxAllowance = 0; 
         $incomeTax = 0; 
 

@@ -44,6 +44,15 @@ class GlobalAllowanceSeeder extends Seeder
 
             // --- POTONGAN KARYAWAN (DEDUCTION) ---
             [
+                'name' => 'Pajak PPh 21',
+                'amount' => 0.05, // Misal 5% dari gapok
+                'type' => 'percentage_gapok',
+                'category' => 'deduction',
+                'target_status' => 'All',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
                 'name' => 'BPJS TK (JHT) - Karyawan 2%',
                 'amount' => 0.02,
                 'type' => 'percentage_gapok',

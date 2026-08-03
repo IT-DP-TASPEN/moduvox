@@ -61,12 +61,20 @@ class UserSeeder extends Seeder
                     'branch_code' => $user['branch_code'],
                     'branch_name' => $user['branch_name'],
                     'is_admin' => $user['is_admin'],
-                    'password' => Hash::make('DPT@SP3n'),
+                    'password' => Hash::make('Moduvox123!'),
                     'email_verified_at' => $user['email_verified_at'] ?? now(),
                     'created_at' => $user['created_at'] ?? now(),
                     'updated_at' => $user['updated_at'] ?? now(),
+                    'birth_date' => '1995-' . str_pad(rand(1, 12), 2, '0', STR_PAD_LEFT) . '-' . str_pad(rand(1, 28), 2, '0', STR_PAD_LEFT),
                 ]
             );
+
+            // Force a 15% chance to have a birthday in the current month for demo purposes
+            if (rand(1, 100) <= 15) {
+                $createdUser->update([
+                    'birth_date' => '1995-' . str_pad(now()->month, 2, '0', STR_PAD_LEFT) . '-' . str_pad(rand(1, 28), 2, '0', STR_PAD_LEFT)
+                ]);
+            }
 
             // Estimate Basic Salary based on Title
             $salary = 4500000; // Default Staff

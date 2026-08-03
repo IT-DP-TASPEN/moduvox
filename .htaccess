@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Jika request sudah mengarah ke /dist/ tapi file/folder tidak ditemukan
+    # fallback ke /dist/index.html untuk React Router
+    RewriteCond %{REQUEST_URI} ^/dist/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ /dist/index.html [L]
+    
+    # Jika request bukan ke /dist/, rewrite ke /dist/
+    RewriteCond %{REQUEST_URI} !^/dist/
+    RewriteRule ^(.*)$ dist/$1 [L]
+</IfModule>

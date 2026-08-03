@@ -100,6 +100,10 @@ class AuthController extends Controller
 
     public function changePassword(Request $request)
     {
+        if (app()->environment(['local', 'testing'])) {
+            return response()->json(['message' => 'Fitur ganti password dinonaktifkan pada mode demo.'], 403);
+        }
+
         $request->validate([
             'old_password' => 'required',
             'new_password' => 'required|min:6|confirmed',

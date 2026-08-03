@@ -10,7 +10,7 @@ const portfolioItems = [
     modules: '12 Modul',
     desc: 'Sistem informasi sumber daya manusia terpadu yang mencakup manajemen kehadiran, cuti, lembur, dan penggajian.',
     img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDG5onik6UmShtNvs08pYcb1SjWSXu-aeuvFy-Z5SL0ddNrodUdrYRej0gYrh94upxa165N2E5B48_ut_qqXKlCm37nmzPz1EuvvnmZGeKusRv5cZJJS5xEEY8AHxZX768aMupSvvytsuLkrHMZTMtabKBW7U4psQGkJywW6ON6AZc0YjlIKzWSPPnV69P1PHuhg518ilfRv3w37OLJwiTNKUj1b_qe-3h00l4eBL8v3w7Wn6KUy7b-5ZXyQc9xvJVRMFoiqXpOVjo',
-    demoUrl: 'https://hris.moduvox.com',
+    demoUrl: import.meta.env.VITE_HRIS_URL || 'https://hris.moduvox.com',
     techStack: ['Laravel', 'MySQL', 'Bootstrap'],
     status: 'active',       // active | coming-soon | maintenance
     projectDir: 'projects/hris',
@@ -22,7 +22,7 @@ const portfolioItems = [
     modules: '5 Modul',
     desc: 'Platform arsip digital cerdas untuk pengindeksan, pencarian, dan pengamanan dokumen institusi dengan hak akses berlapis.',
     img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCvkJssdONfsXVPckXiaDSlWBo-GEs_6th48mRTV_WK6RpSWhJaJE4qhSVYeJ40D6V0nK3rCHCEN3tPv5WUsyuMx6ri52NyPs6nEnltRMyaC2rrx3IsHOiynZr4a_pMgD4yT2GvR9BJwiMWtRZ4NNLMeEcj5-CSWE1rFnxn4Y3Sg9393eN8OFtfLUVRBpUL7f85MIc5uDOwq67dadlIMg2SW6cDwCTk8i_o-E-P_Wbxaz9QnvbbcB0BDYouW-b65UJAmFTMT2mee3g',
-    demoUrl: 'https://siardi.moduvox.com',
+    demoUrl: import.meta.env.VITE_SIARDI_URL || 'https://siardi.moduvox.com',
     techStack: ['Laravel', 'MySQL', 'Vue.js'],
     status: 'active',
     projectDir: 'projects/siardi',

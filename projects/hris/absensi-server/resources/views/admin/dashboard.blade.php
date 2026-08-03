@@ -4,23 +4,29 @@
 
 @section('content')
 <!-- Global Filter Section -->
-<div class="bg-white p-4 rounded-3xl border border-slate-100 shadow-sm mb-8 flex flex-wrap items-center gap-4">
+<form method="GET" action="{{ route('admin.dashboard') }}" class="bg-white p-4 rounded-3xl border border-slate-100 shadow-sm mb-8 flex flex-wrap items-center gap-4">
     <div class="flex items-center gap-2 text-slate-500">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
         </svg>
-        <span class="text-xs font-bold uppercase tracking-wider">Filter Dashboard:</span>
+        <span class="text-xs font-bold uppercase tracking-wider">Filter Periode:</span>
     </div>
-    <select class="bg-slate-50 border-none rounded-xl text-xs font-semibold px-4 py-2 focus:ring-2 focus:ring-brand-blue">
-        <option>Semua Cabang</option>
+    <select name="month" onchange="this.form.submit()" class="bg-slate-50 border-none rounded-xl text-xs font-semibold px-4 py-2 focus:ring-2 focus:ring-brand-blue">
+        @foreach(range(1, 12) as $m)
+            <option value="{{ $m }}" {{ $filterMonth == $m ? 'selected' : '' }}>
+                {{ \Carbon\Carbon::create()->month($m)->locale('id')->translatedFormat('F') }}
+            </option>
+        @endforeach
     </select>
-    <select class="bg-slate-50 border-none rounded-xl text-xs font-semibold px-4 py-2 focus:ring-2 focus:ring-brand-blue">
-        <option>Semua Divisi</option>
+    <select name="year" onchange="this.form.submit()" class="bg-slate-50 border-none rounded-xl text-xs font-semibold px-4 py-2 focus:ring-2 focus:ring-brand-blue">
+        @foreach(range(now()->year - 2, now()->year) as $y)
+            <option value="{{ $y }}" {{ $filterYear == $y ? 'selected' : '' }}>{{ $y }}</option>
+        @endforeach
     </select>
     <div class="flex-1 flex justify-end">
         <span class="text-xs text-slate-400 font-medium">Data Terakhir Diperbarui: {{ now()->format('d/m/Y H:i') }}</span>
     </div>
-</div>
+</form>
 
 <!-- 1. Executive Summary (KPI Cards) -->
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
@@ -224,10 +230,19 @@
                 </div>
                 @endforeach
                 
-                <div class="p-3 bg-blue-50 rounded-2xl flex items-center gap-3">
-                    <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
-                    <p class="text-[10px] font-bold text-blue-700">{{ $birthdaysThisMonth->count() }} Karyawan ulang tahun bulan ini</p>
+                @if($birthdaysThisMonth->count() > 0)
+                <div class="p-3 bg-blue-50 rounded-2xl">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                        <p class="text-[10px] font-bold text-blue-700">{{ $birthdaysThisMonth->count() }} Karyawan Ulang Tahun Bulan Ini:</p>
+                    </div>
+                    <ul class="pl-5 list-disc text-[9px] text-blue-800 space-y-1">
+                        @foreach($birthdaysThisMonth as $bday)
+                            <li>{{ $bday->employee_id }} - <strong>{{ $bday->name }}</strong> - {{ $bday->division_name }} ({{ \Carbon\Carbon::parse($bday->birth_date)->format('d M') }})</li>
+                        @endforeach
+                    </ul>
                 </div>
+                @endif
             </div>
         </div>
 

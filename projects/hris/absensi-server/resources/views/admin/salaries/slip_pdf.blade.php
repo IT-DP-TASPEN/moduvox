@@ -7,7 +7,6 @@
         body { font-family: 'Helvetica', sans-serif; font-size: 11px; color: #000; line-height: 1.3; margin: 0; padding: 0; }
         .wrapper { border: 1px solid #000; padding: 10px; margin: 10px; }
         .header-table { width: 100%; margin-bottom: 15px; }
-        .header-logo { height: 40px; width: auto; }
         .company-name { font-size: 13px; font-weight: bold; }
         .slip-title { font-size: 13px; font-weight: bold; }
         
@@ -30,27 +29,45 @@
 </head>
 <body>
     @php
-        $logoPath = public_path('images/logo.png');
-        $logoSrc = '';
-        if(file_exists($logoPath)) {
-            $logoData = base64_encode(file_get_contents($logoPath));
-            $logoSrc = 'data:image/png;base64,' . $logoData;
+        $monthName = Carbon\Carbon::create(null, $salary->month)->locale('id')->translatedFormat('F');
+        
+        $earningsList = [
+            ['name' => 'Gaji', 'amount' => $salary->basic_salary],
+            ['name' => 'Uang Lembur', 'amount' => $salary->overtime_pay],
+            ['name' => 'Uang Makan Lembur', 'amount' => $salary->overtime_meal_pay],
+            ['name' => 'Tunjangan Pajak', 'amount' => $salary->tax_allowance],
+            ['name' => 'Tunjangan Jabatan', 'amount' => $salary->position_allowance],
+            ['name' => 'Tunjangan Kinerja Individu', 'amount' => $salary->performance_allowance],
+        ];
+        
+        $deductionsList = [
+            ['name' => 'Pajak', 'amount' => $salary->income_tax],
+        ];
+        
+        $nonThpList = [];
+        
+        $dynamicComponents = json_decode($salary->dynamic_components, true) ?: [];
+        foreach ($dynamicComponents as $comp) {
+            $cat = strtolower($comp['category'] ?? '');
+            if ($cat === 'earning' || $cat === 'pendapatan') {
+                $earningsList[] = ['name' => $comp['name'], 'amount' => $comp['amount']];
+            } elseif ($cat === 'deduction' || $cat === 'potongan') {
+                $deductionsList[] = ['name' => $comp['name'], 'amount' => $comp['amount']];
+            } elseif ($cat === 'company_paid' || $cat === 'non-thp' || $cat === 'non_thp') {
+                $nonThpList[] = ['name' => $comp['name'], 'amount' => $comp['amount']];
+            }
         }
-        $monthName = Carbon\Carbon::create(null, $salary->month)->translatedFormat('F');
+        
+        $maxRows = max(count($earningsList), count($deductionsList));
     @endphp
 
     <div class="wrapper">
         <table class="header-table">
             <tr>
-                <td style="width: 150px;">
-                    @if($logoSrc)
-                        <img src="{{ $logoSrc }}" class="header-logo" alt="Logo">
-                    @else
-                        <div style="font-weight:bold; color: #1e3a8a;">moduvox</div>
-                    @endif
+                <td style="width: 250px;">
+                    <div style="font-weight:900; color: #1e3a8a; font-size: 20px; letter-spacing: -0.5px;">PT MODUVOX TECH ID</div>
                 </td>
                 <td>
-                    <div class="company-name">PT Moduvox</div>
                     <div class="slip-title">Slip Gaji Bulan {{ $monthName }} {{ $salary->year }}</div>
                 </td>
             </tr>
@@ -97,30 +114,23 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td style="width: 25%;">Gaji</td><td style="width: 25%;" class="amount">{{ number_format($salary->basic_salary, 0, ',', '.') }}</td>
-                    <td style="width: 25%;">Pajak</td><td style="width: 25%;" class="amount">{{ number_format($salary->income_tax, 0, ',', '.') }}</td>
-                </tr>
-                <tr>
-                    <td>Uang Lembur</td><td class="amount">{{ number_format($salary->overtime_pay, 0, ',', '.') }}</td>
-                    <td>JHT Karyawan</td><td class="amount">{{ number_format($salary->jht_employee, 0, ',', '.') }}</td>
-                </tr>
-                <tr>
-                    <td>Uang Makan Lembur</td><td class="amount">{{ number_format($salary->overtime_meal_pay, 0, ',', '.') }}</td>
-                    <td>JP Karyawan</td><td class="amount">{{ number_format($salary->jp_employee, 0, ',', '.') }}</td>
-                </tr>
-                <tr>
-                    <td>Tunjangan Pajak</td><td class="amount">{{ number_format($salary->tax_allowance, 0, ',', '.') }}</td>
-                    <td>JKN Karyawan</td><td class="amount">{{ number_format($salary->jkn_employee, 0, ',', '.') }}</td>
-                </tr>
-                <tr>
-                    <td>Tunjangan Jabatan</td><td class="amount">{{ number_format($salary->position_allowance, 0, ',', '.') }}</td>
-                    <td>Potongan Moduvox Save</td><td class="amount">{{ number_format($salary->taspen_save_deduction, 0, ',', '.') }}</td>
-                </tr>
-                <tr>
-                    <td>Tunjangan Kinerja Individu</td><td class="amount">{{ number_format($salary->performance_allowance, 0, ',', '.') }}</td>
-                    <td></td><td></td>
-                </tr>
+                @for($i = 0; $i < $maxRows; $i++)
+                    <tr>
+                        @if(isset($earningsList[$i]))
+                            <td style="width: 25%;">{{ $earningsList[$i]['name'] }}</td>
+                            <td style="width: 25%;" class="amount">{{ number_format($earningsList[$i]['amount'], 0, ',', '.') }}</td>
+                        @else
+                            <td style="width: 25%;"></td><td style="width: 25%;"></td>
+                        @endif
+                        
+                        @if(isset($deductionsList[$i]))
+                            <td style="width: 25%;">{{ $deductionsList[$i]['name'] }}</td>
+                            <td style="width: 25%;" class="amount">{{ number_format($deductionsList[$i]['amount'], 0, ',', '.') }}</td>
+                        @else
+                            <td style="width: 25%;"></td><td style="width: 25%;"></td>
+                        @endif
+                    </tr>
+                @endfor
                 
                 <tr class="border-top border-bottom font-bold">
                     <td>Total Pendapatan</td><td class="amount">{{ number_format($salary->total_earnings, 0, ',', '.') }}</td>
@@ -143,27 +153,15 @@
                 <tr>
                     <td colspan="4" class="font-bold">Pendapatan non THP</td>
                 </tr>
+                @forelse($nonThpList as $nonThp)
                 <tr>
-                    <td class="pl-15">JKK Perusahaan</td><td class="amount">{{ number_format($salary->jkk_company, 0, ',', '.') }}</td><td colspan="2"></td>
+                    <td class="pl-15">{{ $nonThp['name'] }}</td><td class="amount">{{ number_format($nonThp['amount'], 0, ',', '.') }}</td><td colspan="2"></td>
                 </tr>
+                @empty
                 <tr>
-                    <td class="pl-15">JKM Perusahaan</td><td class="amount">{{ number_format($salary->jkm_company, 0, ',', '.') }}</td><td colspan="2"></td>
+                    <td class="pl-15">-</td><td class="amount">0</td><td colspan="2"></td>
                 </tr>
-                <tr>
-                    <td class="pl-15">JHT Perusahaan</td><td class="amount">{{ number_format($salary->jht_company, 0, ',', '.') }}</td><td colspan="2"></td>
-                </tr>
-                <tr>
-                    <td class="pl-15">JP Perusahaan</td><td class="amount">{{ number_format($salary->jp_company, 0, ',', '.') }}</td><td colspan="2"></td>
-                </tr>
-                <tr>
-                    <td class="pl-15">JKN Perusahaan</td><td class="amount">{{ number_format($salary->jkn_company, 0, ',', '.') }}</td><td colspan="2"></td>
-                </tr>
-                <tr>
-                    <td class="pl-15">Premi Pensiun</td><td class="amount">{{ number_format($salary->pension_premium, 0, ',', '.') }}</td><td colspan="2"></td>
-                </tr>
-                <tr>
-                    <td class="pl-15">Tunjangan Moduvox Save</td><td class="amount">{{ number_format($salary->taspen_save_allowance, 0, ',', '.') }}</td><td colspan="2"></td>
-                </tr>
+                @endforelse
                 
                 <tr class="border-top border-bottom font-bold">
                     <td>Total pendapatan non THP</td><td class="amount">{{ number_format($salary->total_non_thp, 0, ',', '.') }}</td>
@@ -177,7 +175,7 @@
         </table>
 
         <div class="footer-note">
-            Slip gaji ini dibuat otomatis menggunakan aplikasi ESS gaji.id, sehingga tidak membutuhkan tanda tangan.
+            Slip gaji ini dibuat otomatis menggunakan aplikasi HRIS Moduvox, sehingga tidak membutuhkan tanda tangan.
         </div>
     </div>
 </body>
