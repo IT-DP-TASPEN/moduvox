@@ -1,0 +1,211 @@
+@import '../../../../vendor/filament/filament/resources/css/theme.css';
+
+@source '../../../../app/Filament/**/*';
+@source '../../../../resources/views/filament/**/*';
+
+@layer components {
+    .siardi-page-stack {
+        @apply space-y-6;
+    }
+
+    .siardi-stat-grid {
+        @apply grid gap-4 md:grid-cols-2 xl:grid-cols-4;
+    }
+
+    .siardi-stat-card {
+        @apply rounded-2xl border border-gray-200 bg-white p-5 shadow-sm ring-1 ring-gray-950/5 dark:border-white/10 dark:bg-gray-900 dark:ring-white/10;
+    }
+
+    .siardi-stat-label {
+        @apply text-xs font-semibold uppercase tracking-[0.16em] text-gray-500 dark:text-gray-400;
+    }
+
+    .siardi-stat-value {
+        @apply mt-3 text-3xl font-semibold text-gray-950 dark:text-white;
+    }
+
+    .siardi-stat-meta {
+        @apply mt-1 text-sm text-gray-500 dark:text-gray-400;
+    }
+
+    .siardi-filter-grid {
+        @apply grid gap-4 md:grid-cols-2 xl:grid-cols-4;
+    }
+
+    .siardi-filter-grid-5 {
+        @apply grid gap-4 md:grid-cols-2 xl:grid-cols-5;
+    }
+
+    .siardi-filter-field {
+        @apply flex flex-col gap-2;
+    }
+
+    .siardi-filter-label {
+        @apply text-sm font-medium text-gray-950 dark:text-white;
+    }
+
+    .siardi-filter-help {
+        @apply text-xs text-gray-500 dark:text-gray-400;
+    }
+
+    .siardi-workspace-stack {
+        @apply space-y-4;
+    }
+
+    .siardi-surface-card {
+        @apply rounded-2xl border border-gray-200 bg-gray-50 p-4 shadow-sm ring-1 ring-gray-950/5 dark:border-white/10 dark:bg-white/5 dark:ring-white/10;
+    }
+
+    .siardi-candidate-card {
+        @apply rounded-2xl border border-gray-200 bg-gray-50 p-4 shadow-sm ring-1 ring-gray-950/5 dark:border-white/10 dark:bg-gray-900/70 dark:ring-white/10;
+    }
+
+    .siardi-panel-split {
+        @apply flex flex-col gap-4 sm:flex-row sm:items-start;
+    }
+
+    .siardi-panel-copy {
+        @apply min-w-0 flex-1 space-y-3;
+    }
+
+    .siardi-action-rail {
+        @apply flex w-full justify-end sm:ml-auto sm:w-auto sm:shrink-0 sm:self-start;
+    }
+
+    .siardi-chip-list {
+        @apply flex flex-wrap gap-2 text-xs text-gray-500 dark:text-gray-400;
+    }
+
+    .siardi-chip {
+        @apply rounded-full border border-gray-200 bg-gray-100 px-3 py-1 text-gray-600 dark:border-white/10 dark:bg-white/10 dark:text-gray-300;
+    }
+
+    .siardi-table-shell {
+        @apply overflow-x-auto rounded-2xl border border-gray-200 bg-white shadow-sm ring-1 ring-gray-950/5 dark:border-white/10 dark:bg-gray-900 dark:ring-white/10;
+    }
+
+    .siardi-table {
+        @apply min-w-full text-sm text-gray-700 dark:text-gray-200;
+    }
+
+    .siardi-table thead {
+        @apply bg-gray-50 dark:bg-white/5;
+    }
+
+    .siardi-table th {
+        @apply whitespace-nowrap px-4 py-3 text-left text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-300;
+    }
+
+    .siardi-table td {
+        @apply border-t border-gray-200 px-4 py-3 align-top dark:border-white/10;
+    }
+
+    .siardi-report-table-shell {
+        @apply overflow-x-auto rounded-2xl border border-gray-200 bg-white shadow-sm ring-1 ring-gray-950/5 dark:border-white/10 dark:bg-gray-900 dark:ring-white/10;
+    }
+
+    .siardi-report-table {
+        @apply min-w-full border-separate border-spacing-0 text-sm text-gray-700 dark:text-gray-200;
+    }
+
+    .siardi-report-table th,
+    .siardi-report-table td {
+        @apply border border-gray-200 px-3 py-2 dark:border-white/10;
+    }
+
+    .siardi-report-title {
+        @apply bg-amber-500 text-center font-semibold tracking-wide text-white;
+    }
+
+    .siardi-report-head {
+        @apply bg-amber-50 text-center font-semibold text-gray-900 dark:bg-amber-500/10 dark:text-amber-100;
+    }
+
+    .siardi-report-subhead {
+        @apply bg-gray-50 text-center font-medium text-gray-600 dark:bg-white/5 dark:text-gray-300;
+    }
+
+    .siardi-report-value {
+        @apply text-center font-medium;
+    }
+
+    .siardi-report-total-label {
+        @apply bg-gray-50 text-center font-semibold dark:bg-white/5;
+    }
+
+    .siardi-report-total {
+        @apply text-center font-semibold text-gray-950 dark:text-white;
+    }
+
+    .siardi-empty {
+        @apply rounded-xl border border-dashed border-gray-300 bg-gray-50 px-4 py-6 text-center text-sm text-gray-500 dark:border-white/10 dark:bg-white/5 dark:text-gray-400;
+    }
+
+    .siardi-signature {
+        @apply mt-6 text-sm text-gray-600 dark:text-gray-300;
+    }
+
+    .siardi-signature-name {
+        @apply mt-12 text-right font-semibold text-gray-950 underline decoration-gray-400 underline-offset-4 dark:text-white;
+    }
+
+    .siardi-signature-role {
+        @apply mt-3 text-right text-xs font-medium uppercase tracking-[0.16em] text-gray-500 dark:text-gray-400;
+    }
+
+    .siardi-preview-stack {
+        @apply space-y-3;
+    }
+
+    .siardi-preview-link {
+        @apply text-sm font-medium text-primary-600 underline underline-offset-2;
+    }
+
+    .siardi-preview-image {
+        @apply block w-full rounded-lg border border-gray-200 bg-white object-contain dark:border-white/10 dark:bg-gray-950/40;
+    }
+
+    .siardi-preview-video {
+        @apply block w-full rounded-lg border border-gray-200 bg-white dark:border-white/10 dark:bg-gray-950/40;
+    }
+
+    .siardi-preview-text {
+        @apply overflow-auto rounded-lg border border-gray-200 bg-gray-50 p-4 text-xs text-gray-700 dark:border-white/10 dark:bg-white/5 dark:text-gray-200;
+    }
+
+    .siardi-pdf-preview {
+        @apply space-y-3;
+    }
+
+    .siardi-pdf-preview__toolbar {
+        @apply flex flex-col gap-2 rounded-xl border border-gray-200 bg-white p-3 shadow-sm dark:border-white/10 dark:bg-gray-900/80 sm:flex-row sm:items-center sm:justify-between;
+    }
+
+    .siardi-pdf-preview__control-group {
+        @apply flex flex-wrap items-center gap-2;
+    }
+
+    .siardi-pdf-preview__button {
+        @apply inline-flex items-center justify-center rounded-lg border border-gray-200 bg-gray-50 px-3 py-1.5 text-xs font-medium text-gray-700 transition hover:bg-gray-100 disabled:cursor-not-allowed disabled:opacity-50 dark:border-white/10 dark:bg-white/5 dark:text-gray-200 dark:hover:bg-white/10;
+    }
+
+    .siardi-pdf-preview__meta {
+        @apply text-xs font-medium text-gray-500 dark:text-gray-400;
+    }
+
+    .siardi-pdf-preview__viewport {
+        @apply relative overflow-auto rounded-xl border border-gray-200 bg-white dark:border-white/10 dark:bg-gray-950/40;
+    }
+
+    .siardi-pdf-preview__state {
+        @apply flex min-h-full items-center justify-center px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400;
+    }
+
+    .siardi-pdf-preview__state--error {
+        @apply text-danger-600 dark:text-danger-400;
+    }
+
+    .siardi-pdf-preview__canvas {
+        @apply block h-auto min-w-full bg-white dark:bg-white;
+    }
+}

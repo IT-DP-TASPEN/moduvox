@@ -1,0 +1,3 @@
+batch_code;cutoff_date;journal_reference;line_no;line_type;branch_code;branch_id;deposit_product_code;deposit_product_id;coa_code;coa_id;coa_name;debit;credit;account_count;source_total_amount;notes
+DEP-MIG-2026-06-24;2026-06-24;MIG-DEP-20260624;1;DEBIT;0001;1;;;149999;;REKENING ANTARA MIGRASI / SALDO AWAL;105000000;0;4;105000000;Akun debit penyeimbang migrasi, bukan kas/bank operasional
+DEP-MIG-2026-06-24;2026-06-24;MIG-DEP-20260624;2;CREDIT;0001;1;201;1;212010;;SIMPANAN DEPOSITO BERJANGKA;0;105000000;4;105000000;Credit saldo deposito aktif dari produk simpanan berjangka

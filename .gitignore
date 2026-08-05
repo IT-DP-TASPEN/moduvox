@@ -24,15 +24,8 @@ dist-ssr
 *.sw?
 
 # ============================
-# Project Portofolio (Laravel apps via git clone)
-# Ignore semua isi folder project, kecuali .gitkeep dan README
-# ============================
-projects/siardi/*
-projects/corebanking-koperasi/*
-projects/bantuan-potong/*
-projects/inventaris-manajemen/*
-projects/hris/*
-
-# Tapi tetap track placeholder & README
-!projects/*/.gitkeep
-!projects/README.md
+# Ignore specific dependency directories inside projects
+vendor/
+projects/**/vendor/
+projects/**/node_modules/
+projects/**/public/build/
