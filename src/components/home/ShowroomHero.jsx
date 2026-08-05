@@ -131,7 +131,24 @@ export default function ShowroomHero() {
               >
                 <InteractiveAppWindow 
                   appName={`${carouselProducts[currentProductIndex].name} - Live Preview`}
-                  modules={carouselProducts[currentProductIndex].modules[carouselProducts[currentProductIndex].roles[0].id]}
+                  modules={carouselProducts[currentProductIndex].modulesDetail.slice(0, 4).map((mod, i) => ({
+                    id: `mod-${i}`,
+                    label: mod.title,
+                    icon: mod.icon,
+                    widgets: [
+                      { label: 'Active Users', value: 1250, suffix: '' },
+                      { label: 'System Health', value: 99.9, suffix: '%' }
+                    ],
+                    table: {
+                      title: `Data ${mod.title}`,
+                      headers: ['ID', 'Description', 'Status'],
+                      rows: [
+                        ['#1001', 'System Integration', 'Active'],
+                        ['#1002', 'Data Sync Process', 'Active'],
+                        ['#1003', 'Security Scan', 'Completed']
+                      ]
+                    }
+                  }))}
                   color={carouselProducts[currentProductIndex].color}
                   compact={true}
                 />

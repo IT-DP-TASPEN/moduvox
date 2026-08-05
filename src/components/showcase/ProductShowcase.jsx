@@ -4,15 +4,12 @@ import { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import InteractiveAppWindow from './InteractiveAppWindow';
-import RoleSwitcher from './RoleSwitcher';
 
 export default function ProductShowcase({ product, index }) {
   const isEven = index % 2 === 0;
-  const [activeRole, setActiveRole] = useState(product.roles[0].id);
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
-  const currentModules = product.modules[activeRole] || [];
   const Icon = product.icon;
 
   // Alternate between soft-tinted backgrounds for visual rhythm
@@ -21,6 +18,26 @@ export default function ProductShowcase({ product, index }) {
     '#FFFFFF',   // White
   ];
   const bgColor = bgColors[index % 2];
+
+  // Map modulesDetail to InteractiveAppWindow format
+  const mockModules = product.modulesDetail?.slice(0, 4).map((mod, i) => ({
+    id: `mod-${i}`,
+    label: mod.title,
+    icon: mod.icon,
+    widgets: [
+      { label: 'Active Users', value: 850, suffix: '' },
+      { label: 'System Health', value: 99.8, suffix: '%' }
+    ],
+    table: {
+      title: `Data ${mod.title}`,
+      headers: ['ID', 'Description', 'Status'],
+      rows: [
+        ['#1001', 'System Integration', 'Active'],
+        ['#1002', 'Data Sync Process', 'Active'],
+        ['#1003', 'Security Scan', 'Completed']
+      ]
+    }
+  })) || [];
 
   return (
     <section
@@ -71,7 +88,7 @@ export default function ProductShowcase({ product, index }) {
             }}>
               <Icon size={14} color={product.color} />
               <span style={{ fontSize: '0.75rem', fontWeight: 700, color: product.color, textTransform: 'uppercase', letterSpacing: '0.06em' }}>
-                {product.name}
+                {product.category || product.name}
               </span>
             </div>
 
@@ -86,11 +103,11 @@ export default function ProductShowcase({ product, index }) {
               fontSize: '1rem', color: '#64748B', lineHeight: 1.7,
               marginBottom: '2rem', maxWidth: '500px',
             }}>
-              {product.problem}
+              {product.longDescription?.split('.').slice(0, 2).join('.')}...
             </p>
 
             <ul style={{ listStyle: 'none', padding: 0, marginBottom: '2rem' }}>
-              {product.benefits.map((benefit, i) => (
+              {product.highlights?.map((highlight, i) => (
                 <motion.li
                   key={i}
                   initial={{ opacity: 0, x: -10 }}
@@ -102,26 +119,15 @@ export default function ProductShowcase({ product, index }) {
                   }}
                 >
                   <CheckCircle2 size={18} color={product.color} style={{ flexShrink: 0, marginTop: 2 }} />
-                  {benefit}
+                  <div>
+                    <strong>{highlight.title}:</strong> {highlight.desc}
+                  </div>
                 </motion.li>
               ))}
             </ul>
 
-            {/* Role Switcher */}
-            <div style={{ marginBottom: '1.5rem' }}>
-              <div style={{ fontSize: '0.75rem', fontWeight: 600, color: '#94A3B8', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.75rem' }}>
-                Lihat sebagai
-              </div>
-              <RoleSwitcher
-                roles={product.roles}
-                activeRole={activeRole}
-                onRoleChange={setActiveRole}
-                color={product.color}
-              />
-            </div>
-
             <Link
-              to="/portfolio"
+              to={`/solutions/${product.id}`}
               style={{
                 display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
                 color: product.color, fontWeight: 600, fontSize: '0.9rem',
@@ -130,7 +136,7 @@ export default function ProductShowcase({ product, index }) {
               onMouseEnter={e => e.currentTarget.style.gap = '0.75rem'}
               onMouseLeave={e => e.currentTarget.style.gap = '0.5rem'}
             >
-              Lihat Demo Lengkap <ArrowRight size={18} />
+              Lihat Detail Solusi <ArrowRight size={18} />
             </Link>
           </motion.div>
 
@@ -142,36 +148,25 @@ export default function ProductShowcase({ product, index }) {
             style={{ order: isEven ? 1 : 2 }}
             className="app-window-float"
           >
-            {product.id === 'hris' ? (
-              <div style={{ position: 'relative', width: '100%', paddingBottom: '10%' }}>
+            {product.screenshots && product.screenshots.length > 0 ? (
+              <div style={{ position: 'relative', width: '100%' }}>
                 <img 
-                  src="/images/hris_admin_mockup.png" 
-                  alt="HRIS Admin Dashboard" 
+                  src={product.screenshots[0]} 
+                  alt={`${product.name} Preview`} 
                   style={{ 
-                    width: '90%', 
+                    width: '100%', 
                     borderRadius: '16px', 
                     boxShadow: '0 25px 50px -12px rgba(0,0,0,0.25)', 
-                    border: '1px solid #E2E8F0' 
-                  }} 
-                />
-                <img 
-                  src="/images/hris_mobile_mockup.png" 
-                  alt="HRIS Mobile App" 
-                  style={{ 
-                    position: 'absolute', 
-                    bottom: '-15%', 
-                    right: '-5%', 
-                    width: '35%', 
-                    borderRadius: '24px', 
-                    boxShadow: '0 25px 50px -12px rgba(0,0,0,0.5)',
-                    border: '4px solid #fff'
+                    border: '1px solid #E2E8F0',
+                    aspectRatio: '16/10',
+                    objectFit: 'cover'
                   }} 
                 />
               </div>
             ) : (
               <InteractiveAppWindow
                 appName={product.name}
-                modules={currentModules}
+                modules={mockModules}
                 color={product.color}
                 compact={true}
               />

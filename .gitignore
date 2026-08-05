@@ -28,12 +28,10 @@ dist-ssr
 # Ignore semua isi folder project, kecuali .gitkeep dan README
 # ============================
 projects/siardi/*
-projects/crm/*
-projects/core-banking/*
+projects/corebanking-koperasi/*
 projects/bantuan-potong/*
-projects/sinergi/*
-projects/btn-channeling/*
-projects/web-company-profile/*
+projects/inventaris-manajemen/*
+projects/hris/*
 
 # Tapi tetap track placeholder & README
 !projects/*/.gitkeep
