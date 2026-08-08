@@ -35,9 +35,13 @@ Ikuti langkah-langkah di bawah ini untuk menjalankan Moduvox secara lokal:
    ```bash
    npm run dev
    ```
+   *Jika Anda ingin mengekspos aplikasi agar bisa diakses oleh perangkat lain di jaringan lokal yang sama (misal IP `192.168.46.2`), gunakan perintah berikut:*
+   ```bash
+   npm run dev -- --host
+   ```
 
 4. **Mulai Mengeksplorasi**
-   Buka [http://localhost:5173](http://localhost:5173) di browser favorit Anda.
+   Buka [http://localhost:5173](http://localhost:5173) (atau IP lokal Anda) di browser favorit Anda.
 
 ## 📁 Struktur Direktori
 
