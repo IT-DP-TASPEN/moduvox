@@ -39,8 +39,8 @@ const portfolioItems = [
   },
   {
     id: 'siardi',
-    title: 'SIARDI',
-    category: 'Dokumen',
+    title: 'Sistem Arsip Digital',
+    category: 'Document Management',
     modules: '5 Modul',
     desc: 'Platform arsip digital cerdas untuk pengindeksan, pencarian, dan pengamanan dokumen institusi dengan hak akses berlapis.',
     img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCvkJssdONfsXVPckXiaDSlWBo-GEs_6th48mRTV_WK6RpSWhJaJE4qhSVYeJ40D6V0nK3rCHCEN3tPv5WUsyuMx6ri52NyPs6nEnltRMyaC2rrx3IsHOiynZr4a_pMgD4yT2GvR9BJwiMWtRZ4NNLMeEcj5-CSWE1rFnxn4Y3Sg9393eN8OFtfLUVRBpUL7f85MIc5uDOwq67dadlIMg2SW6cDwCTk8i_o-E-P_Wbxaz9QnvbbcB0BDYouW-b65UJAmFTMT2mee3g',

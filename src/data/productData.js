@@ -315,13 +315,13 @@ export const products = [
   },
   {
     id: 'siardi',
-    name: 'SIARDI',
+    name: 'Sistem Arsip Digital',
     category: 'Document Management System',
     tagline: 'Sistem Informasi Arsip Digital Cerdas',
     color: '#7C3AED',
     icon: FileArchive,
     demoUrl: import.meta.env.VITE_SIARDI_URL || 'https://siardi.moduvox.com',
-    longDescription: 'SIARDI (Sistem Arsip Digital) mentransformasi ruang penyimpanan fisik menjadi repository digital yang cerdas dan terstruktur. Dokumen perusahaan yang dulunya berserakan kini diindeks dengan metadata cerdas, dilindungi oleh hak akses berlapis, dan dilengkapi dengan audit trail komprehensif, sehingga proses pencarian memori instansi hanya membutuhkan hitungan detik.',
+    longDescription: 'Sistem Arsip Digital mentransformasi ruang penyimpanan fisik menjadi repository digital yang cerdas dan terstruktur. Dokumen perusahaan yang dulunya berserakan kini diindeks dengan metadata cerdas, dilindungi oleh hak akses berlapis, dan dilengkapi dengan audit trail komprehensif, sehingga proses pencarian memori instansi hanya membutuhkan hitungan detik.',
     highlights: [
       { title: 'Repository', icon: Database, desc: 'Penyimpanan terpusat' },
       { title: 'Smart Search', icon: Search, desc: 'Pencarian metadata' },
