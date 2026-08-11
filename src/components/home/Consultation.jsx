@@ -32,124 +32,149 @@ Solusi yang Diminati: ${formData.solution || '-'}`;
   };
 
   return (
-    <section id="consultation" ref={ref} className="section-dark" style={{ padding: '6rem 0' }}>
+    <section id="consultation" ref={ref} style={{ padding: '4rem 0 8rem 0' }}>
       <div className="container">
-        <div className="responsive-grid">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6 }}
-          >
-            <h2 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '1rem', letterSpacing: '-0.02em' }}>
-              Siap Memodernisasi
-              <br />
-              Operasional Anda?
-            </h2>
-            <p style={{ fontSize: '1.1rem', color: '#94A3B8', lineHeight: 1.7, marginBottom: '2rem', maxWidth: '480px' }}>
-              Konsultasikan kebutuhan digital Anda dengan tim kami. Kami akan membantu mengidentifikasi solusi yang paling tepat untuk organisasi Anda.
-            </p>
-
-            <div style={{ background: 'rgba(14, 165, 233, 0.1)', border: '1px solid rgba(14, 165, 233, 0.2)', padding: '1.5rem', borderRadius: '12px', marginBottom: '2.5rem', maxWidth: '480px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '12px' }}>
-                <div style={{ width: '40px', height: '40px', borderRadius: '8px', background: 'rgba(14, 165, 233, 0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <Code2 size={20} color="#0EA5E9" />
-                </div>
-                <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: '#E0F2FE', margin: 0 }}>Custom Software Development</h3>
-              </div>
-              <p style={{ fontSize: '0.95rem', color: '#94A3B8', lineHeight: 1.6, margin: 0 }}>
-                Tidak menemukan solusi yang pas di atas? Tenang, sebagai Software Engineering Firm, <strong>kami siap membangun aplikasi kustom apapun dari nol</strong> sesuai dengan proses bisnis unik perusahaan Anda.
+        <div 
+          className="section-dark" 
+          style={{ 
+            borderRadius: '32px', 
+            padding: '4rem', 
+            boxShadow: '0 30px 60px -15px rgba(0,0,0,0.3)',
+            position: 'relative',
+            overflow: 'hidden'
+          }}
+        >
+          {/* Subtle Background Decoration */}
+          <div style={{ position: 'absolute', top: '-20%', right: '-10%', width: '600px', height: '600px', background: 'radial-gradient(circle, rgba(14,165,233,0.15) 0%, rgba(15,23,42,0) 70%)', borderRadius: '50%', pointerEvents: 'none' }} />
+          
+          <div className="responsive-grid" style={{ position: 'relative', zIndex: 10 }}>
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={isInView ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.6 }}
+            >
+              <h2 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '1rem', letterSpacing: '-0.02em' }}>
+                Siap Memodernisasi
+                <br />
+                Operasional Anda?
+              </h2>
+              <p style={{ fontSize: '1.1rem', color: '#94A3B8', lineHeight: 1.7, marginBottom: '2rem', maxWidth: '480px' }}>
+                Konsultasikan kebutuhan digital Anda dengan tim kami. Kami akan membantu mengidentifikasi solusi yang paling tepat untuk organisasi Anda.
               </p>
-            </div>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: '#CBD5E1' }}>
-                <Mail size={18} color="#0EA5E9" />
-                <span style={{ fontSize: '0.9rem' }}>Moduvox.tech@gmail.com</span>
+              <div style={{ background: 'rgba(14, 165, 233, 0.1)', border: '1px solid rgba(14, 165, 233, 0.2)', padding: '1.5rem', borderRadius: '12px', marginBottom: '2.5rem', maxWidth: '480px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '12px' }}>
+                  <div style={{ width: '40px', height: '40px', borderRadius: '8px', background: 'rgba(14, 165, 233, 0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <Code2 size={20} color="#0EA5E9" />
+                  </div>
+                  <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: '#E0F2FE', margin: 0 }}>Custom Software Development</h3>
+                </div>
+                <p style={{ fontSize: '0.95rem', color: '#94A3B8', lineHeight: 1.6, margin: 0 }}>
+                  Tidak menemukan solusi yang pas di atas? Tenang, sebagai Software Engineering Firm, <strong>kami siap membangun aplikasi kustom apapun dari nol</strong> sesuai dengan proses bisnis unik perusahaan Anda.
+                </p>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: '#CBD5E1' }}>
-                <Phone size={18} color="#0EA5E9" />
-                <span style={{ fontSize: '0.9rem' }}>Firman - 081233580013</span>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: '#CBD5E1' }}>
-                <MapPin size={18} color="#0EA5E9" />
-                <span style={{ fontSize: '0.9rem' }}>Jakarta, Indonesia</span>
-              </div>
-            </div>
-          </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <div style={{
-              background: 'rgba(255,255,255,0.05)',
-              border: '1px solid rgba(255,255,255,0.1)',
-              borderRadius: '16px', padding: '2rem',
-            }}>
-              <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '1.5rem' }}>
-                Jadwalkan Konsultasi
-              </h3>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                <input 
-                  placeholder="Nama Lengkap" 
-                  value={formData.name}
-                  onChange={(e) => setFormData({...formData, name: e.target.value})}
-                  style={{
-                    padding: '0.75rem 1rem', borderRadius: '8px',
-                    background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.15)',
-                    color: '#F8FAFC', fontSize: '0.9rem', outline: 'none',
-                  }} 
-                />
-                <input 
-                  placeholder="Email" 
-                  type="email" 
-                  value={formData.email}
-                  onChange={(e) => setFormData({...formData, email: e.target.value})}
-                  style={{
-                    padding: '0.75rem 1rem', borderRadius: '8px',
-                    background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.15)',
-                    color: '#F8FAFC', fontSize: '0.9rem', outline: 'none',
-                  }} 
-                />
-                <input 
-                  placeholder="Perusahaan / Instansi" 
-                  value={formData.company}
-                  onChange={(e) => setFormData({...formData, company: e.target.value})}
-                  style={{
-                    padding: '0.75rem 1rem', borderRadius: '8px',
-                    background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.15)',
-                    color: '#F8FAFC', fontSize: '0.9rem', outline: 'none',
-                  }} 
-                />
-                <select 
-                  value={formData.solution}
-                  onChange={(e) => setFormData({...formData, solution: e.target.value})}
-                  style={{
-                    padding: '0.75rem 1rem', borderRadius: '8px',
-                    background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.15)',
-                    color: '#94A3B8', fontSize: '0.9rem', outline: 'none',
-                  }}
-                >
-                  <option value="">Solusi yang Diminati</option>
-                  {products.map(p => (
-                    <option key={p.id} value={p.id}>{p.name}</option>
-                  ))}
-                </select>
-                <button 
-                  className="btn-primary" 
-                  onClick={handleSubmit}
-                  style={{
-                    width: '100%', justifyContent: 'center',
-                    padding: '0.875rem', fontSize: '1rem',
-                    background: '#0EA5E9', cursor: 'pointer'
-                  }}
-                >
-                  Kirim Permintaan <ArrowRight size={18} />
-                </button>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: '#CBD5E1' }}>
+                  <Mail size={18} color="#0EA5E9" />
+                  <span style={{ fontSize: '0.9rem' }}>Moduvox.tech@gmail.com</span>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: '#CBD5E1' }}>
+                  <Phone size={18} color="#0EA5E9" />
+                  <span style={{ fontSize: '0.9rem' }}>Firman - 081233580013</span>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: '#CBD5E1' }}>
+                  <MapPin size={18} color="#0EA5E9" />
+                  <span style={{ fontSize: '0.9rem' }}>Jakarta, Indonesia</span>
+                </div>
               </div>
-            </div>
-          </motion.div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={isInView ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <div style={{
+                background: 'rgba(255,255,255,0.03)',
+                border: '1px solid rgba(255,255,255,0.08)',
+                backdropFilter: 'blur(10px)',
+                borderRadius: '24px', 
+                padding: '2.5rem',
+              }}>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '1.5rem' }}>
+                  Jadwalkan Konsultasi
+                </h3>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                  <input 
+                    placeholder="Nama Lengkap" 
+                    value={formData.name}
+                    onChange={(e) => setFormData({...formData, name: e.target.value})}
+                    style={{
+                      padding: '1rem', borderRadius: '12px',
+                      background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)',
+                      color: '#F8FAFC', fontSize: '0.95rem', outline: 'none', transition: 'all 0.3s'
+                    }} 
+                    onFocus={(e) => e.target.style.borderColor = '#0EA5E9'}
+                    onBlur={(e) => e.target.style.borderColor = 'rgba(255,255,255,0.1)'}
+                  />
+                  <input 
+                    placeholder="Email" 
+                    type="email" 
+                    value={formData.email}
+                    onChange={(e) => setFormData({...formData, email: e.target.value})}
+                    style={{
+                      padding: '1rem', borderRadius: '12px',
+                      background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)',
+                      color: '#F8FAFC', fontSize: '0.95rem', outline: 'none', transition: 'all 0.3s'
+                    }} 
+                    onFocus={(e) => e.target.style.borderColor = '#0EA5E9'}
+                    onBlur={(e) => e.target.style.borderColor = 'rgba(255,255,255,0.1)'}
+                  />
+                  <input 
+                    placeholder="Perusahaan / Instansi" 
+                    value={formData.company}
+                    onChange={(e) => setFormData({...formData, company: e.target.value})}
+                    style={{
+                      padding: '1rem', borderRadius: '12px',
+                      background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)',
+                      color: '#F8FAFC', fontSize: '0.95rem', outline: 'none', transition: 'all 0.3s'
+                    }} 
+                    onFocus={(e) => e.target.style.borderColor = '#0EA5E9'}
+                    onBlur={(e) => e.target.style.borderColor = 'rgba(255,255,255,0.1)'}
+                  />
+                  <select 
+                    value={formData.solution}
+                    onChange={(e) => setFormData({...formData, solution: e.target.value})}
+                    style={{
+                      padding: '1rem', borderRadius: '12px',
+                      background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)',
+                      color: '#94A3B8', fontSize: '0.95rem', outline: 'none', transition: 'all 0.3s'
+                    }}
+                    onFocus={(e) => e.target.style.borderColor = '#0EA5E9'}
+                    onBlur={(e) => e.target.style.borderColor = 'rgba(255,255,255,0.1)'}
+                  >
+                    <option value="" style={{ color: '#0F172A' }}>Solusi yang Diminati</option>
+                    {products.map(p => (
+                      <option key={p.id} value={p.id} style={{ color: '#0F172A' }}>{p.name}</option>
+                    ))}
+                  </select>
+                  <button 
+                    className="btn-primary" 
+                    onClick={handleSubmit}
+                    style={{
+                      width: '100%', justifyContent: 'center',
+                      padding: '1rem', fontSize: '1rem',
+                      background: '#0EA5E9', cursor: 'pointer',
+                      borderRadius: '12px', marginTop: '0.5rem'
+                    }}
+                  >
+                    Kirim Permintaan <ArrowRight size={18} />
+                  </button>
+                </div>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </div>
     </section>
