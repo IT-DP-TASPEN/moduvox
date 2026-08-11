@@ -178,8 +178,10 @@ class DashboardController extends Controller
                 $present = Attendance::whereDate('created_at', $targetDateString)
                     ->whereHas('user', function($q) use ($div) {
                         $q->where('division_name', $div->division_name);
-                    })->count();
-                $div->rate = $div->total_emp > 0 ? ($present / $div->total_emp) * 100 : 0;
+                    })
+                    ->distinct('user_id')
+                    ->count('user_id');
+                $div->rate = $div->total_emp > 0 ? min(100, ($present / $div->total_emp) * 100) : 0;
                 return $div;
             })->sortByDesc('rate')->first();
 
