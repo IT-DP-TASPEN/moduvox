@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { ArrowRight, Mail, Phone, MapPin } from 'lucide-react';
+import { products } from '../../data/productData';
 
 export default function Consultation() {
   const ref = useRef(null);
@@ -119,13 +120,9 @@ Solusi yang Diminati: ${formData.solution || '-'}`;
                   }}
                 >
                   <option value="">Solusi yang Diminati</option>
-                  <option value="hris">HRIS Enterprise</option>
-                  <option value="siardi">SIARDI</option>
-                  <option value="crm">CRM Solutions</option>
-                  <option value="core-banking">Core Banking</option>
-                  <option value="bantuan-potong">Bantuan Potong</option>
-                  <option value="sinergi">Sinergi</option>
-                  <option value="btn-channeling">BTN Channeling</option>
+                  {products.map(p => (
+                    <option key={p.id} value={p.id}>{p.name}</option>
+                  ))}
                 </select>
                 <button 
                   className="btn-primary" 

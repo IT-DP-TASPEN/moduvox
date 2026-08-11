@@ -15,6 +15,17 @@ export default function MainLayout() {
     setIsMobileMenuOpen(false);
   };
 
+  const handleScrollToConsultation = (e) => {
+    e.preventDefault();
+    closeMobileMenu();
+    if (window.location.pathname !== '/') {
+      window.location.href = '/#consultation';
+    } else {
+      const el = document.getElementById('consultation');
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className={styles.layout}>
       <header className={styles.header}>
@@ -30,8 +41,8 @@ export default function MainLayout() {
           <nav className={styles.nav}>
             <Link to="/" className={styles.navLink}>Home</Link>
             <Link to="/portfolio" className={styles.navLink}>Portofolio</Link>
-            <a href="/#consultation" className={styles.navLink}>Kontak</a>
-            <a href="/#consultation" className="btn-primary">Konsultasi</a>
+            <a href="/#consultation" className={styles.navLink} onClick={handleScrollToConsultation}>Kontak</a>
+            <a href="/#consultation" className="btn-primary" onClick={handleScrollToConsultation}>Konsultasi</a>
           </nav>
 
           <button className={styles.mobileMenuBtn} onClick={toggleMobileMenu}>
@@ -44,8 +55,8 @@ export default function MainLayout() {
           <div className={styles.mobileNav}>
             <Link to="/" className={styles.mobileNavLink} onClick={closeMobileMenu}>Home</Link>
             <Link to="/portfolio" className={styles.mobileNavLink} onClick={closeMobileMenu}>Portofolio</Link>
-            <a href="/#consultation" className={styles.mobileNavLink} onClick={closeMobileMenu}>Kontak</a>
-            <a href="/#consultation" className={`btn-primary ${styles.mobileNavBtn}`} onClick={closeMobileMenu}>Konsultasi</a>
+            <a href="/#consultation" className={styles.mobileNavLink} onClick={handleScrollToConsultation}>Kontak</a>
+            <a href="/#consultation" className={`btn-primary ${styles.mobileNavBtn}`} onClick={handleScrollToConsultation}>Konsultasi</a>
           </div>
         )}
       </header>
