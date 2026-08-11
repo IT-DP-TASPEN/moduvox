@@ -11,12 +11,14 @@ class UserSeeder extends Seeder
     public function run(): void
     {
         // Buat admin global
-        User::factory()->create([
+        $admin = User::factory()->create([
             'name' => 'Admin Utama',
             'email' => 'admin@example.com',
             'password' => Hash::make('password'),
             'mitra_master_id' => null,
         ]);
+        
+        $admin->assignRole('super_admin');
 
         // Buat 4 user untuk masing-masing mitra
         $mitraIds = [1, 2]; // dari MitraMasterSeeder

@@ -27,11 +27,11 @@ export default function Consultation() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: '#CBD5E1' }}>
                 <Mail size={18} color="#0EA5E9" />
-                <span style={{ fontSize: '0.9rem' }}>hello@moduvox.com</span>
+                <span style={{ fontSize: '0.9rem' }}>Moduvox.tech@gmail.com</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: '#CBD5E1' }}>
                 <Phone size={18} color="#0EA5E9" />
-                <span style={{ fontSize: '0.9rem' }}>+62 21 1234 5678</span>
+                <span style={{ fontSize: '0.9rem' }}>Firman - 081233580013</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: '#CBD5E1' }}>
                 <MapPin size={18} color="#0EA5E9" />
