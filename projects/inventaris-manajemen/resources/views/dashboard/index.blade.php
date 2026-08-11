@@ -43,7 +43,7 @@
         </div>
         <div>
             <p class="text-[13px] font-semibold text-gray-500 mb-1 uppercase tracking-wider">Nilai Perolehan</p>
-            <h3 class="text-xl font-bold text-gray-900 tracking-tight whitespace-nowrap">{{ \App\Helpers\FormatHelper::rupiah($totalPerolehan) }}</h3>
+            <h3 class="text-lg font-bold text-gray-900 tracking-tighter whitespace-nowrap">{{ \App\Helpers\FormatHelper::rupiah($totalPerolehan) }}</h3>
         </div>
     </div>
 
@@ -53,7 +53,7 @@
         </div>
         <div>
             <p class="text-[13px] font-semibold text-gray-500 mb-1 uppercase tracking-wider">Akumulasi Susut</p>
-            <h3 class="text-xl font-bold text-gray-900 tracking-tight whitespace-nowrap">{{ \App\Helpers\FormatHelper::rupiah($totalAkumulasi) }}</h3>
+            <h3 class="text-lg font-bold text-gray-900 tracking-tighter whitespace-nowrap">{{ \App\Helpers\FormatHelper::rupiah($totalAkumulasi) }}</h3>
         </div>
     </div>
 
@@ -63,7 +63,7 @@
         </div>
         <div>
             <p class="text-[13px] font-semibold text-gray-500 mb-1 uppercase tracking-wider">Nilai Buku Bersih</p>
-            <h3 class="text-xl font-bold text-gray-900 tracking-tight whitespace-nowrap">{{ \App\Helpers\FormatHelper::rupiah($totalBuku) }}</h3>
+            <h3 class="text-lg font-bold text-gray-900 tracking-tighter whitespace-nowrap">{{ \App\Helpers\FormatHelper::rupiah($totalBuku) }}</h3>
         </div>
     </div>
 </div>
