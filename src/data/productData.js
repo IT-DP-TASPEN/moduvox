@@ -495,5 +495,97 @@ export const products = [
     screenshots: [
       'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1200&q=80',
     ]
+  },
+  {
+    id: 'company-profile',
+    name: 'Corporate Website',
+    category: 'Company Profile & Showcase',
+    tagline: 'Platform Representasi Digital Perusahaan Modern',
+    color: '#F59E0B',
+    icon: Globe,
+    demoUrl: import.meta.env.VITE_COMPRO_URL || 'http://company-profile.moduvox.local',
+    longDescription: 'Corporate Website adalah solusi platform profil perusahaan modern yang dirancang khusus untuk mempresentasikan portofolio, layanan unggulan, karir, dan informasi kontak secara profesional. Dilengkapi dengan CMS (Content Management System) di panel admin untuk mempermudah pembaruan konten tanpa perlu kemampuan coding.',
+    highlights: [
+      { title: 'Portfolio', icon: Box, desc: 'Showcase proyek' },
+      { title: 'Services', icon: Layers, desc: 'Layanan unggulan' },
+      { title: 'CMS Admin', icon: LayoutDashboard, desc: 'Panel manajemen konten' },
+      { title: 'Contact', icon: Users, desc: 'Formulir konsultasi' }
+    ],
+    modulesDetail: [
+      {
+        icon: LayoutDashboard,
+        title: 'CMS Dashboard',
+        shortDesc: 'Pusat manajemen konten website perusahaan.',
+        features: [
+          'Kelola teks halaman utama',
+          'Statistik kunjungan sederhana',
+          'Manajemen inbox pesan'
+        ]
+      },
+      {
+        icon: Box,
+        title: 'Manajemen Portofolio',
+        shortDesc: 'Katalog proyek dan pencapaian perusahaan.',
+        features: [
+          'Galeri proyek dengan gambar',
+          'Kategorisasi proyek',
+          'Detail spesifikasi teknis'
+        ]
+      },
+      {
+        icon: Users,
+        title: 'Karir & Publikasi',
+        shortDesc: 'Publikasi informasi lowongan pekerjaan dan layanan.',
+        features: [
+          'Manajemen lowongan kerja',
+          'Status aktif/non-aktif karir',
+          'Manajemen klien/mitra'
+        ]
+      },
+      {
+        icon: Settings,
+        title: 'Inquiry & Kontak',
+        shortDesc: 'Pengelolaan pesan masuk dari prospek.',
+        features: [
+          'Form jadwal konsultasi terintegrasi',
+          'Notifikasi pesan baru',
+          'Manajemen status pesan (read/unread)'
+        ]
+      }
+    ],
+    workflow: [
+      { step: '01', title: 'Setup Identitas' },
+      { step: '02', title: 'Input Layanan' },
+      { step: '03', title: 'Upload Portofolio' },
+      { step: '04', title: 'Publikasi Web' },
+      { step: '05', title: 'Terima Inquiry' },
+      { step: '06', title: 'Follow Up Klien' }
+    ],
+    reportingStats: {
+      totalAsset: 'Unlimited Pages',
+      acquisitionValue: 'SEO Optimized',
+      bookValue: 'Responsive Design',
+      depreciationMonth: 'Fast Loading'
+    },
+    enterpriseCapabilities: [
+      { title: 'Web Based', icon: Globe },
+      { title: 'CMS Ready', icon: FileText },
+      { title: 'Fast Loading', icon: Zap },
+      { title: 'Secure Admin', icon: Lock }
+    ],
+    techStackList: [
+      { category: 'Framework', tech: 'Laravel 11' },
+      { category: 'Frontend', tech: 'Blade + Tailwind CSS' },
+      { category: 'Database', tech: 'MySQL' },
+      { category: 'Deployment', tech: 'VPS/Cloud' },
+    ],
+    systemRequirements: [
+      'PHP >= 8.2',
+      'Database MySQL',
+      'Ekstensi PHP standar Laravel'
+    ],
+    screenshots: [
+      'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80',
+    ]
   }
 ];

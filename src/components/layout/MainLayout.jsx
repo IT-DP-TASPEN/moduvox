@@ -90,6 +90,13 @@ export default function MainLayout() {
               ))}
             </ul>
           </div>
+          <div className={styles.footerLinks}>
+            <h4 className={styles.footerLinksTitle}>Hubungi Kami</h4>
+            <ul>
+              <li><a href="/#consultation" onClick={handleScrollToConsultation}>Jadwalkan Konsultasi</a></li>
+              <li><a href="mailto:hello@moduvox.id">hello@moduvox.id</a></li>
+            </ul>
+          </div>
         </div>
         <div className={styles.footerBottom}>
           <div className="container">

@@ -58,6 +58,17 @@ const portfolioItems = [
     demoUrl: import.meta.env.VITE_HRIS_URL || 'https://hris.moduvox.com',
     techStack: ['Laravel', 'MySQL', 'Vue.js'],
     status: 'active',
+  },
+  {
+    id: 'company-profile',
+    title: 'Corporate Website',
+    category: 'Website',
+    modules: 'CMS Dasar',
+    desc: 'Platform profil perusahaan modern dengan kapabilitas manajemen konten mandiri, portofolio proyek dinamis, dan sistem penerimaan pesan kontak.',
+    img: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80',
+    demoUrl: import.meta.env.VITE_COMPRO_URL || 'http://company-profile.moduvox.local',
+    techStack: ['Laravel', 'MySQL', 'Blade'],
+    status: 'active',
   }
 ];
 
