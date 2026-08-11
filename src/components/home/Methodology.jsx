@@ -39,17 +39,9 @@ export default function Methodology() {
           </p>
         </motion.div>
 
-        <div style={{
-          display: 'flex', gap: '0', alignItems: 'flex-start',
-          position: 'relative',
-        }}>
+        <div className="methodology-container">
           {/* Connecting line */}
-          <div style={{
-            position: 'absolute', top: '32px', left: '10%', right: '10%',
-            height: '2px',
-            background: 'linear-gradient(90deg, var(--primary-light), var(--primary), var(--secondary), var(--primary), var(--primary-light))',
-            zIndex: 0,
-          }} />
+          <div className="methodology-line" />
 
           {steps.map((step, i) => {
             const Icon = step.icon;

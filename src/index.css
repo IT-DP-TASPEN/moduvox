@@ -371,6 +371,18 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 4rem;
 }
 
+.methodology-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  position: relative;
+}
+
+.methodology-line {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .responsive-grid {
     grid-template-columns: 1fr 1fr;
@@ -382,6 +394,21 @@ h1, h2, h3, h4, h5, h6 {
   }
   .capabilities-grid {
     grid-template-columns: repeat(5, 1fr);
+  }
+  .methodology-container {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0;
+  }
+  .methodology-line {
+    display: block;
+    position: absolute;
+    top: 32px;
+    left: 10%;
+    right: 10%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary-light), var(--primary), var(--secondary), var(--primary), var(--primary-light));
+    z-index: 0;
   }
 }
 
