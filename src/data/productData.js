@@ -586,6 +586,12 @@ export const products = [
     ],
     screenshots: [
       'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80',
-    ]
+    ],
+    activeClient: {
+      name: 'PT Dwiartha Prima',
+      url: 'https://dwiarthaprima.com/',
+      image: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&q=80',
+      description: 'Website yang kami bangun dan masih aktif digunakan hingga saat ini untuk menunjang operasional perusahaan.'
+    }
   }
 ];

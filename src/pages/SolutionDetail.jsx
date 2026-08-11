@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { 
   ArrowLeft, ExternalLink, CheckCircle2,
   Layers, Layout, Server, Code2, 
-  ArrowRight, ShieldCheck, RefreshCw, Zap
+  ArrowRight, ShieldCheck, RefreshCw, Zap, Globe, Lock
 } from 'lucide-react';
 import { products } from '../data/productData';
 import s from './SolutionDetail.module.css';
@@ -110,6 +110,98 @@ export default function SolutionDetail() {
           </div>
         </div>
       </section>
+
+      {/* ACTIVE CLIENT */}
+      {product.activeClient && (
+        <section className={s.proofSection}>
+          <div className={s.container}>
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              style={{ maxWidth: '1024px', margin: '0 auto' }}
+            >
+              <div style={{ textAlign: 'center', marginBottom: '48px' }}>
+                <div style={{ 
+                  display: 'inline-flex', 
+                  alignItems: 'center', 
+                  gap: '8px', 
+                  padding: '6px 14px', 
+                  borderRadius: '8px', 
+                  background: `${product.color}15`, 
+                  color: product.color,
+                  fontSize: '11px', 
+                  fontWeight: 700, 
+                  textTransform: 'uppercase', 
+                  letterSpacing: '0.08em',
+                  marginBottom: '16px'
+                }}>
+                  <Globe size={14} /> Live Implementation
+                </div>
+                <h2 style={{ fontSize: '36px', fontWeight: 800, color: '#0F172A', marginBottom: '16px', letterSpacing: '-0.02em' }}>
+                  Implementasi Nyata
+                </h2>
+                <p style={{ fontSize: '18px', color: '#64748B', maxWidth: '600px', margin: '0 auto', lineHeight: '1.6' }}>
+                  Bukan sekadar prototype. Solusi yang kami bangun benar-benar digunakan oleh client untuk mendukung operasional bisnis mereka.
+                </p>
+              </div>
+
+              <div className={s.proofBrowser}>
+                <div className={s.proofBrowserHeader}>
+                  <div style={{ width: '12px', height: '12px', borderRadius: '50%', background: '#EF4444' }} />
+                  <div style={{ width: '12px', height: '12px', borderRadius: '50%', background: '#F59E0B' }} />
+                  <div style={{ width: '12px', height: '12px', borderRadius: '50%', background: '#10B981' }} />
+                  <div className={s.proofBrowserUrl}>
+                    <Lock size={12} /> {product.activeClient.url}
+                  </div>
+                </div>
+                
+                <div className={s.proofImageWrap}>
+                  <img 
+                    src={product.activeClient.image || product.screenshots?.[0]} 
+                    alt={product.activeClient.name} 
+                    className={s.proofImage}
+                  />
+                  <div className={s.proofOverlay}>
+                    <div>
+                      <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '4px 10px', borderRadius: '6px', background: 'rgba(16, 185, 129, 0.2)', color: '#10B981', fontSize: '12px', fontWeight: 700, border: '1px solid rgba(16, 185, 129, 0.3)', marginBottom: '12px' }}>
+                        <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#10B981', animation: 'pulse 2s infinite' }} />
+                        LIVE & ACTIVE
+                      </div>
+                      <h3 className={s.proofTitle}>{product.activeClient.name}</h3>
+                      <p style={{ color: '#CBD5E1', fontSize: '15px', maxWidth: '500px', margin: 0 }}>{product.activeClient.description || 'Sistem yang kami bangun berjalan optimal menunjang aktivitas perusahaan setiap harinya.'}</p>
+                    </div>
+                    
+                    <a 
+                      href={product.activeClient.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      style={{ 
+                        display: 'inline-flex', 
+                        alignItems: 'center', 
+                        justifyContent: 'center',
+                        gap: '8px', 
+                        padding: '14px 28px', 
+                        background: '#ffffff', 
+                        borderRadius: '99px', 
+                        fontSize: '15px', 
+                        fontWeight: 700, 
+                        color: '#0F172A', 
+                        textDecoration: 'none',
+                        transition: 'all 0.3s'
+                      }}
+                      onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 25px -5px rgba(255,255,255,0.3)'; }}
+                      onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}
+                    >
+                      Kunjungi Website <ExternalLink size={17} />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </section>
+      )}
 
       {/* HIGHLIGHTS */}
       {product.highlights && (

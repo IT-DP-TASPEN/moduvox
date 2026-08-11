@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { ArrowRight, Mail, Phone, MapPin } from 'lucide-react';
+import { ArrowRight, Mail, Phone, MapPin, Code2 } from 'lucide-react';
 import { products } from '../../data/productData';
 
 export default function Consultation() {
@@ -45,9 +45,21 @@ Solusi yang Diminati: ${formData.solution || '-'}`;
               <br />
               Operasional Anda?
             </h2>
-            <p style={{ fontSize: '1.1rem', color: '#94A3B8', lineHeight: 1.7, marginBottom: '2.5rem', maxWidth: '480px' }}>
+            <p style={{ fontSize: '1.1rem', color: '#94A3B8', lineHeight: 1.7, marginBottom: '2rem', maxWidth: '480px' }}>
               Konsultasikan kebutuhan digital Anda dengan tim kami. Kami akan membantu mengidentifikasi solusi yang paling tepat untuk organisasi Anda.
             </p>
+
+            <div style={{ background: 'rgba(14, 165, 233, 0.1)', border: '1px solid rgba(14, 165, 233, 0.2)', padding: '1.5rem', borderRadius: '12px', marginBottom: '2.5rem', maxWidth: '480px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '12px' }}>
+                <div style={{ width: '40px', height: '40px', borderRadius: '8px', background: 'rgba(14, 165, 233, 0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <Code2 size={20} color="#0EA5E9" />
+                </div>
+                <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: '#E0F2FE', margin: 0 }}>Custom Software Development</h3>
+              </div>
+              <p style={{ fontSize: '0.95rem', color: '#94A3B8', lineHeight: 1.6, margin: 0 }}>
+                Tidak menemukan solusi yang pas di atas? Tenang, sebagai Software Engineering Firm, <strong>kami siap membangun aplikasi kustom apapun dari nol</strong> sesuai dengan proses bisnis unik perusahaan Anda.
+              </p>
+            </div>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: '#CBD5E1' }}>

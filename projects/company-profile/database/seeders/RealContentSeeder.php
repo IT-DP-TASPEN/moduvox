@@ -42,10 +42,10 @@ class RealContentSeeder extends Seeder
             ['page' => 'services', 'key' => 'services_hero_desc', 'value' => 'Dari tahap perencanaan hingga pelaksanaan lapangan, kami menyediakan layanan komprehensif dengan fokus pada mutu pekerjaan dan keselamatan kerja.'],
             ['page' => 'services', 'key' => 'services_cta_title', 'value' => 'Permintaan Estimasi & Konsultasi Teknis'],
             ['page' => 'services', 'key' => 'services_cta_desc', 'value' => 'Diskusikan spesifikasi proyek Anda bersama tenaga ahli kami untuk mendapatkan estimasi yang realistis sesuai kebutuhan anggaran dan jadwal.'],
-            ['page' => 'contact', 'key' => 'contact_email', 'value' => 'dwiarthaprima@gmail.com'],
-            ['page' => 'contact', 'key' => 'contact_phone', 'value' => '(0251) 2007064'],
+            ['page' => 'contact', 'key' => 'contact_email', 'value' => 'Moduvox.tech@gmail.com'],
+            ['page' => 'contact', 'key' => 'contact_phone', 'value' => '+62 812 3358 0013'],
             ['page' => 'contact', 'key' => 'contact_whatsapp', 'value' => 'https://wa.me/6221555123'],
-            ['page' => 'contact', 'key' => 'contact_address', 'value' => 'Kp Gg. Kb. Kopi, RT.005/RW.008, Pengasinan, Kec. Sawangan, Kota Depok, Jawa Barat 16518'],
+            ['page' => 'contact', 'key' => 'contact_address', 'value' => 'Graha Moduvox, Jakarta Selatan'],
             ['page' => 'contact', 'key' => 'contact_hours', 'value' => 'Senin–Jumat, 08:00–17:00 WIB'],
         ];
 
@@ -55,8 +55,8 @@ class RealContentSeeder extends Seeder
 
         // 2. Social Media
         $socials = [
-            ['name' => 'LinkedIn', 'icon' => 'hub', 'url' => 'https://linkedin.com/company/dwiarthaprima', 'order' => 1, 'is_active' => true],
-            ['name' => 'Instagram', 'icon' => 'photo_camera', 'url' => 'https://instagram.com/dwiarthaprima', 'order' => 2, 'is_active' => true],
+            ['name' => 'LinkedIn', 'icon' => 'hub', 'url' => 'https://linkedin.com/company/moduvox', 'order' => 1, 'is_active' => true],
+            ['name' => 'Instagram', 'icon' => 'photo_camera', 'url' => 'https://instagram.com/moduvox', 'order' => 2, 'is_active' => true],
         ];
 
         foreach ($socials as $soc) {

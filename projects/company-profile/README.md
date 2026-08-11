@@ -22,41 +22,29 @@ Ini adalah repositori website resmi untuk **PT Dwi Artha Prima** - sebuah perusa
 
 ## 🛠️ Panduan Instalasi (Development Setup)
 
-1. Clone repositori ke mesin lokal Anda:
+1. **Clone repositori**
    ```bash
-   git clone https://github.com/ferrianmfatichin97/dwiarthaprima.git
-   cd dwi-artha-prima
+   git clone https://github.com/ferrianmfatichin97/company-profile.git
+   cd company-profile
    ```
 
-2. Unduh semua paket ekstensi (Dependencies):
+2. **Install dependensi**
    ```bash
    composer install
    npm install
    ```
 
-3. Setup Lingkungan (_Environment_):
-   - Gandakan (Copy) `.env.example` ke file batu bernama `.env`.
-   - Buka pengaturan `.env` lalu hubungkan database Anda:
+3. **Konfigurasi Environment**
+   - Copy file `.env.example` menjadi `.env`
+   - Sesuaikan konfigurasi database:
      ```env
      DB_CONNECTION=mysql
      DB_HOST=127.0.0.1
      DB_PORT=3306
-     DB_DATABASE=dwi_artha_prima
+     DB_DATABASE=moduvox_compro_demo
      DB_USERNAME=root
      DB_PASSWORD=
      ```
-
-4. Bangkitkan Kunci rahasia situs Anda, lalu satukan (_migrate & seed_) fondasi awal Database:
-   ```bash
-   php artisan key:generate
-   php artisan migrate --seed
-   ```
-   > **Sangat Penting:** `migrate --seed` akan memanggil `DatabaseSeeder` yang langsung menciptakan kredensial Administrator utama serta *Dummy Data* proyek, dan tautan teks asli Anda.
-
-5. Pautkan Ruang Penyimpanan Gambar & Video ke jaringan tatanan File Publik:
-   ```bash
-   php artisan storage:link
-   ```
 
 6. Jalankan Server:
    - Server Artisan: `php artisan serve` (atau `.\artisan serve` untuk pengguna Shortcut khusus Windows Anda).

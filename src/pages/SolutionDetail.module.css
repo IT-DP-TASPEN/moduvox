@@ -311,6 +311,125 @@
   50% { opacity: 0.4; }
 }
 
+/* ========== PROOF SECTION ========== */
+.proofSection {
+  padding: 64px 24px 120px;
+  position: relative;
+  z-index: 9;
+  background: #ffffff;
+}
+
+@media (min-width: 1024px) {
+  .proofSection {
+    padding: 80px 24px 120px;
+  }
+}
+
+.proofBrowser {
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px -15px rgba(0,0,0,0.1);
+}
+
+@media (min-width: 768px) {
+  .proofBrowser {
+    border-radius: 24px;
+    box-shadow: 0 20px 40px -20px rgba(0,0,0,0.1);
+  }
+}
+
+.proofBrowserHeader {
+  padding: 12px 16px;
+  border-bottom: 1px solid #E2E8F0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .proofBrowserHeader {
+    padding: 16px 24px;
+  }
+}
+
+.proofBrowserUrl {
+  margin-left: 8px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #94A3B8;
+  background: #F1F5F9;
+  padding: 4px 12px;
+  border-radius: 99px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+@media (min-width: 768px) {
+  .proofBrowserUrl {
+    margin-left: 16px;
+    font-size: 12px;
+    padding: 6px 16px;
+    max-width: none;
+  }
+}
+
+.proofImageWrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.proofImage {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  display: block;
+}
+
+.proofOverlay {
+  background: #0F172A;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .proofOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(15,23,42,0.95) 0%, rgba(15,23,42,0.8) 40%, transparent 100%);
+    padding: 120px 32px 32px;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}
+
+.proofTitle {
+  font-size: 24px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+  .proofTitle {
+    font-size: 28px;
+  }
+}
+
 /* ========== HIGHLIGHTS ========== */
 .highlights {
   position: relative;

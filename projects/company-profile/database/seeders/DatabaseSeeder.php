@@ -22,7 +22,10 @@ class DatabaseSeeder extends Seeder
         );
         $admin->forceFill(['is_admin' => true])->save();
 
-        // Run the Demo Data Seeder
-        $this->call(DemoDataSeeder::class);
+        // Run the Data Seeders
+        $this->call([
+            RealContentSeeder::class,
+            DemoDataSeeder::class,
+        ]);
     }
 }
