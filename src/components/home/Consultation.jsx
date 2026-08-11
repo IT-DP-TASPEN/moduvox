@@ -33,7 +33,7 @@ Solusi yang Diminati: ${formData.solution || '-'}`;
   return (
     <section id="consultation" ref={ref} className="section-dark" style={{ padding: '6rem 0' }}>
       <div className="container">
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }}>
+        <div className="responsive-grid">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}

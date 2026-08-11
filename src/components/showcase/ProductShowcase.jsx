@@ -64,12 +64,7 @@ export default function ProductShowcase({ product, index }) {
       }} />
 
       <div className="container-wide" style={{ position: 'relative', zIndex: 1 }}>
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          gap: '4rem',
-          alignItems: 'center',
-        }}>
+        <div className="responsive-grid">
           {/* Text Content */}
           <motion.div
             initial={{ opacity: 0, x: isEven ? 30 : -30 }}

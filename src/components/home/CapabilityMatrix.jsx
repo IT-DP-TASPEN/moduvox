@@ -51,10 +51,7 @@ export default function CapabilityMatrix() {
           </p>
         </motion.div>
 
-        <div style={{
-          display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)',
-          gap: '1rem', marginBottom: '4rem',
-        }}>
+        <div className="capabilities-grid">
           {capabilities.map((cap, i) => {
             const Icon = cap.icon;
             return (

@@ -57,13 +57,7 @@ export default function ShowroomHero() {
       }} />
 
       <div className="container-wide" style={{ position: 'relative', zIndex: 1 }}>
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          gap: '4rem',
-          alignItems: 'center',
-          marginBottom: '4rem'
-        }}>
+        <div className="responsive-grid" style={{ marginBottom: '4rem' }}>
           
           {/* Left Column: Text Content */}
           <motion.div
@@ -185,9 +179,8 @@ export default function ShowroomHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.5 }}
+          className="stats-grid"
           style={{
-            display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)',
-            gap: '2rem',
             padding: '2.5rem 0',
             borderTop: '1px solid var(--border)',
             maxWidth: '1000px'

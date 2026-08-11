@@ -1,15 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Outlet, Link } from 'react-router-dom';
-import { Building2, ChevronDown, Menu } from 'lucide-react';
+import { Building2, ChevronDown, Menu, X } from 'lucide-react';
 import { products } from '../../data/productData';
 import styles from './MainLayout.module.css';
 
 export default function MainLayout() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <div className={styles.layout}>
       <header className={styles.header}>
         <div className={`container ${styles.headerContainer}`}>
-          <Link to="/" className={styles.logo}>
+          <Link to="/" className={styles.logo} onClick={closeMobileMenu}>
             <Building2 size={24} className={styles.logoIcon} />
             <div className={styles.logoText}>
               <span className={styles.logoTitle}>Moduvox</span>
@@ -24,10 +34,20 @@ export default function MainLayout() {
             <a href="/#consultation" className="btn-primary">Konsultasi</a>
           </nav>
 
-          <button className={styles.mobileMenuBtn}>
-            <Menu size={24} color="var(--text)" />
+          <button className={styles.mobileMenuBtn} onClick={toggleMobileMenu}>
+            {isMobileMenuOpen ? <X size={24} color="var(--text)" /> : <Menu size={24} color="var(--text)" />}
           </button>
         </div>
+
+        {/* Mobile Dropdown Menu */}
+        {isMobileMenuOpen && (
+          <div className={styles.mobileNav}>
+            <Link to="/" className={styles.mobileNavLink} onClick={closeMobileMenu}>Home</Link>
+            <Link to="/portfolio" className={styles.mobileNavLink} onClick={closeMobileMenu}>Portofolio</Link>
+            <a href="/#consultation" className={styles.mobileNavLink} onClick={closeMobileMenu}>Kontak</a>
+            <a href="/#consultation" className={`btn-primary ${styles.mobileNavBtn}`} onClick={closeMobileMenu}>Konsultasi</a>
+          </div>
+        )}
       </header>
 
       <main className={styles.main}>
@@ -47,7 +67,7 @@ export default function MainLayout() {
             <h4 className={styles.footerLinksTitle}>Produk</h4>
             <ul>
               {products.slice(0, 4).map(p => (
-                <li key={p.id}><Link to={`/solutions/${p.id}`}>{p.name}</Link></li>
+                <li key={p.id}><Link to={`/solutions/${p.id}`} onClick={closeMobileMenu}>{p.name}</Link></li>
               ))}
             </ul>
           </div>
@@ -55,7 +75,7 @@ export default function MainLayout() {
             <h4 className={styles.footerLinksTitle}>Lainnya</h4>
             <ul>
               {products.slice(4).map(p => (
-                <li key={p.id}><Link to={`/solutions/${p.id}`}>{p.name}</Link></li>
+                <li key={p.id}><Link to={`/solutions/${p.id}`} onClick={closeMobileMenu}>{p.name}</Link></li>
               ))}
             </ul>
           </div>
