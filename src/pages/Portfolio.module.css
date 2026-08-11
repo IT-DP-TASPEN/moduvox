@@ -170,6 +170,12 @@
   border-radius: 50%;
 }
 
+.cardContent {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .cardTitle {
   font-size: 1.25rem;
   font-weight: 600;
