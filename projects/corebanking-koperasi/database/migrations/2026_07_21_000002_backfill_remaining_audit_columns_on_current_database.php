@@ -70,7 +70,7 @@ return new class extends Migration
             'select table_name from information_schema.tables where table_schema = ? and table_type = ?',
             [$database, 'BASE TABLE']
         ))
-            ->pluck('TABLE_NAME')
+            ->pluck('table_name')
             ->reject(fn (string $table) => in_array($table, $excluded, true))
             ->values()
             ->all();
