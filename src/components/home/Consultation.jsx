@@ -6,6 +6,30 @@ export default function Consultation() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-80px' });
 
+  const [formData, setFormData] = React.useState({
+    name: '',
+    email: '',
+    company: '',
+    solution: ''
+  });
+
+  const handleSubmit = () => {
+    if (!formData.name || !formData.email) {
+      alert("Mohon isi minimal Nama dan Email Anda.");
+      return;
+    }
+    
+    const message = `Halo Tim Moduvox, saya tertarik untuk jadwal konsultasi:
+Nama: ${formData.name}
+Email: ${formData.email}
+Perusahaan/Instansi: ${formData.company || '-'}
+Solusi yang Diminati: ${formData.solution || '-'}`;
+
+    const waNumber = '6281233580013';
+    const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`;
+    window.open(waUrl, '_blank');
+  };
+
   return (
     <section id="consultation" ref={ref} className="section-dark" style={{ padding: '6rem 0' }}>
       <div className="container">
@@ -54,26 +78,46 @@ export default function Consultation() {
                 Jadwalkan Konsultasi
               </h3>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                <input placeholder="Nama Lengkap" style={{
-                  padding: '0.75rem 1rem', borderRadius: '8px',
-                  background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.15)',
-                  color: '#F8FAFC', fontSize: '0.9rem', outline: 'none',
-                }} />
-                <input placeholder="Email" type="email" style={{
-                  padding: '0.75rem 1rem', borderRadius: '8px',
-                  background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.15)',
-                  color: '#F8FAFC', fontSize: '0.9rem', outline: 'none',
-                }} />
-                <input placeholder="Perusahaan / Instansi" style={{
-                  padding: '0.75rem 1rem', borderRadius: '8px',
-                  background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.15)',
-                  color: '#F8FAFC', fontSize: '0.9rem', outline: 'none',
-                }} />
-                <select style={{
-                  padding: '0.75rem 1rem', borderRadius: '8px',
-                  background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.15)',
-                  color: '#94A3B8', fontSize: '0.9rem', outline: 'none',
-                }}>
+                <input 
+                  placeholder="Nama Lengkap" 
+                  value={formData.name}
+                  onChange={(e) => setFormData({...formData, name: e.target.value})}
+                  style={{
+                    padding: '0.75rem 1rem', borderRadius: '8px',
+                    background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.15)',
+                    color: '#F8FAFC', fontSize: '0.9rem', outline: 'none',
+                  }} 
+                />
+                <input 
+                  placeholder="Email" 
+                  type="email" 
+                  value={formData.email}
+                  onChange={(e) => setFormData({...formData, email: e.target.value})}
+                  style={{
+                    padding: '0.75rem 1rem', borderRadius: '8px',
+                    background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.15)',
+                    color: '#F8FAFC', fontSize: '0.9rem', outline: 'none',
+                  }} 
+                />
+                <input 
+                  placeholder="Perusahaan / Instansi" 
+                  value={formData.company}
+                  onChange={(e) => setFormData({...formData, company: e.target.value})}
+                  style={{
+                    padding: '0.75rem 1rem', borderRadius: '8px',
+                    background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.15)',
+                    color: '#F8FAFC', fontSize: '0.9rem', outline: 'none',
+                  }} 
+                />
+                <select 
+                  value={formData.solution}
+                  onChange={(e) => setFormData({...formData, solution: e.target.value})}
+                  style={{
+                    padding: '0.75rem 1rem', borderRadius: '8px',
+                    background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.15)',
+                    color: '#94A3B8', fontSize: '0.9rem', outline: 'none',
+                  }}
+                >
                   <option value="">Solusi yang Diminati</option>
                   <option value="hris">HRIS Enterprise</option>
                   <option value="siardi">SIARDI</option>
@@ -83,11 +127,15 @@ export default function Consultation() {
                   <option value="sinergi">Sinergi</option>
                   <option value="btn-channeling">BTN Channeling</option>
                 </select>
-                <button className="btn-primary" style={{
-                  width: '100%', justifyContent: 'center',
-                  padding: '0.875rem', fontSize: '1rem',
-                  background: '#0EA5E9',
-                }}>
+                <button 
+                  className="btn-primary" 
+                  onClick={handleSubmit}
+                  style={{
+                    width: '100%', justifyContent: 'center',
+                    padding: '0.875rem', fontSize: '1rem',
+                    background: '#0EA5E9', cursor: 'pointer'
+                  }}
+                >
                   Kirim Permintaan <ArrowRight size={18} />
                 </button>
               </div>
