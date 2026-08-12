@@ -78,7 +78,7 @@ const statusConfig = {
   maintenance: { label: 'Maintenance', color: '#94A3B8', bg: '#F1F5F9' },
 };
 
-export default function Portfolio() {
+export default function CaseStudies() {
   const [activeCategory, setActiveCategory] = useState('Semua');
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -113,7 +113,7 @@ export default function Portfolio() {
         </div>
         <div className={styles.filters}>
           {categories.map((cat) => (
-            <button 
+             <button 
               key={cat} 
               className={`${styles.filterBtn} ${activeCategory === cat ? styles.active : ''}`}
               onClick={() => setActiveCategory(cat)}

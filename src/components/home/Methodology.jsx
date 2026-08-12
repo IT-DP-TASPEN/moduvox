@@ -1,17 +1,18 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Search, PenTool, Code2, Rocket, HeadphonesIcon } from 'lucide-react';
+import { Search, PenTool, Code2, Rocket, HeadphonesIcon, ArrowRightLeft } from 'lucide-react';
 
 export default function Methodology() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-80px' });
 
   const steps = [
-    { icon: Search, title: 'Discovery', desc: 'Analisis kebutuhan bisnis, identifikasi pain points, dan pemetaan proses existing.' },
-    { icon: PenTool, title: 'Design', desc: 'Perancangan arsitektur sistem, UX/UI, dan prototype interaktif untuk validasi.' },
-    { icon: Code2, title: 'Development', desc: 'Pengembangan iteratif dengan sprint review, testing otomatis, dan code review.' },
-    { icon: Rocket, title: 'Deployment', desc: 'Go-live bertahap dengan migrasi data, training user, dan monitoring intensif.' },
-    { icon: HeadphonesIcon, title: 'Support', desc: 'Maintenance berkala, pembaruan fitur, dan dukungan teknis berkelanjutan.' },
+    { icon: Search, title: 'Discovery', desc: 'Analisis kebutuhan sistem, arsitektur data, dan pemetaan proses bisnis existing.' },
+    { icon: PenTool, title: 'Design', desc: 'Perancangan arsitektur sistem, skema database, dan antarmuka pengguna.' },
+    { icon: Code2, title: 'Development', desc: 'Pengembangan berbasis iterasi dengan standard enterprise engineering practices.' },
+    { icon: ArrowRightLeft, title: 'Integration', desc: 'Integrasi dengan sistem eksternal, API, dan third-party services yang aman.' },
+    { icon: Rocket, title: 'Deployment', desc: 'Go-live bertahap, migrasi data yang aman, dan konfigurasi environment.' },
+    { icon: HeadphonesIcon, title: 'Support', desc: 'Pemeliharaan berkelanjutan, pemantauan performa, dan bantuan teknis.' },
   ];
 
   return (

@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import ShowroomHero from '../components/home/ShowroomHero';
 import ProductShowcase from '../components/showcase/ProductShowcase';
+import WhatWeBuild from '../components/home/WhatWeBuild';
 import CapabilityMatrix from '../components/home/CapabilityMatrix';
 import Methodology from '../components/home/Methodology';
 import Consultation from '../components/home/Consultation';
@@ -52,6 +53,9 @@ export default function Home() {
     <div>
       <ShowroomHero />
 
+      {/* === WHAT WE BUILD === */}
+      <WhatWeBuild />
+
       {/* === DOT NAVIGATION (Side) === */}
       <nav className="dot-nav" aria-label="Section navigation">
         {navItems.map((item, i) => (
@@ -66,8 +70,24 @@ export default function Home() {
         ))}
       </nav>
 
-      {/* === PRODUCT SHOWCASES === */}
+      {/* === DIVIDER: What We Build → Showcases === */}
+      <WaveDivider fromColor="#FFFFFF" toColor="#F1F5F9" />
+
+      {/* === PRODUCT SHOWCASES (Experience Center) === */}
       <div id="showcases">
+        <div className="container" style={{ textAlign: 'center', marginBottom: '2rem', paddingTop: '4rem' }}>
+          <div className="section-eyebrow">
+            <span className="section-eyebrow-dot" />
+            Experience Center
+          </div>
+          <h2 style={{ fontSize: '2.5rem', fontWeight: 800, color: 'var(--foreground)' }}>
+            Proof of Capability
+          </h2>
+          <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', maxWidth: '600px', margin: '1rem auto' }}>
+            Jelajahi dan coba langsung sistem enterprise yang telah kami kembangkan.
+          </p>
+        </div>
+
         {products.map((product, index) => (
           <div
             key={product.id}
@@ -78,8 +98,27 @@ export default function Home() {
         ))}
       </div>
 
-      {/* === DIVIDER: Showcases → Capabilities === */}
-      <WaveDivider fromColor="#F1F5F9" toColor="#FFFFFF" flipped />
+      {/* === CASE STUDIES BANNER (Proof of Deployment) === */}
+      <div style={{ padding: '6rem 0', background: '#F8FAFC', textAlign: 'center', borderTop: '1px solid var(--border)' }}>
+        <div className="container">
+          <div className="section-eyebrow" style={{ display: 'inline-flex', marginBottom: '1rem' }}>
+            <span className="section-eyebrow-dot" />
+            Live Implementations
+          </div>
+          <h2 style={{ fontSize: '2.5rem', fontWeight: 800, color: 'var(--foreground)', marginBottom: '1.5rem' }}>
+            Proof of Deployment
+          </h2>
+          <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', maxWidth: '700px', margin: '0 auto 2.5rem auto' }}>
+            Sistem yang kami bangun bukan sekadar prototipe. Lihat bagaimana solusi enterprise kami diimplementasikan dan menyelesaikan masalah operasional dunia nyata.
+          </p>
+          <a href="/case-studies" className="btn-primary" style={{ padding: '1rem 2.5rem', fontSize: '1.1rem' }}>
+            Lihat Case Studies
+          </a>
+        </div>
+      </div>
+
+      {/* === DIVIDER === */}
+      <WaveDivider fromColor="#F8FAFC" toColor="#FFFFFF" />
 
       <div id="capabilities">
         <CapabilityMatrix />

@@ -40,9 +40,9 @@ export default function MainLayout() {
 
           <nav className={styles.nav}>
             <Link to="/" className={styles.navLink}>Home</Link>
-            <Link to="/portfolio" className={styles.navLink}>Portofolio</Link>
-            <a href="/#consultation" className={styles.navLink} onClick={handleScrollToConsultation}>Kontak</a>
-            <a href="/#consultation" className="btn-primary" onClick={handleScrollToConsultation}>Konsultasi</a>
+            <Link to="/case-studies" className={styles.navLink}>Portofolio</Link>
+            <Link to="/about" className={styles.navLink}>About Us</Link>
+            <a href="/#consultation" className="btn-primary" onClick={handleScrollToConsultation}>Kontak</a>
           </nav>
 
           <button className={styles.mobileMenuBtn} onClick={toggleMobileMenu}>
@@ -54,9 +54,9 @@ export default function MainLayout() {
         {isMobileMenuOpen && (
           <div className={styles.mobileNav}>
             <Link to="/" className={styles.mobileNavLink} onClick={closeMobileMenu}>Home</Link>
-            <Link to="/portfolio" className={styles.mobileNavLink} onClick={closeMobileMenu}>Portofolio</Link>
-            <a href="/#consultation" className={styles.mobileNavLink} onClick={handleScrollToConsultation}>Kontak</a>
-            <a href="/#consultation" className={`btn-primary ${styles.mobileNavBtn}`} onClick={handleScrollToConsultation}>Konsultasi</a>
+            <Link to="/case-studies" className={styles.mobileNavLink} onClick={closeMobileMenu}>Portofolio</Link>
+            <Link to="/about" className={styles.mobileNavLink} onClick={closeMobileMenu}>About Us</Link>
+            <a href="/#consultation" className={`btn-primary ${styles.mobileNavBtn}`} onClick={handleScrollToConsultation}>Kontak</a>
           </div>
         )}
       </header>
@@ -94,7 +94,7 @@ export default function MainLayout() {
             <h4 className={styles.footerLinksTitle}>Hubungi Kami</h4>
             <ul>
               <li><a href="/#consultation" onClick={handleScrollToConsultation}>Jadwalkan Konsultasi</a></li>
-              <li><a href="mailto:hello@moduvox.id">hello@moduvox.id</a></li>
+              <li><a href="mailto:Moduvox.tech@gmail.com">Moduvox.tech@gmail.com</a></li>
             </ul>
           </div>
         </div>

@@ -28,7 +28,7 @@ export default function ShowroomHero() {
 
   return (
     <section style={{
-      padding: '8rem 0 0 0',
+      padding: '2.5rem 0 0 0',
       background: '#FFFFFF',
       position: 'relative',
       overflow: 'hidden',
@@ -57,7 +57,7 @@ export default function ShowroomHero() {
       }} />
 
       <div className="container-wide" style={{ position: 'relative', zIndex: 1 }}>
-        <div className="responsive-grid" style={{ marginBottom: '4rem' }}>
+        <div className="responsive-grid" style={{ marginBottom: '2rem' }}>
           
           {/* Left Column: Text Content */}
           <motion.div
@@ -68,7 +68,7 @@ export default function ShowroomHero() {
           >
             <div className="section-eyebrow">
               <span className="section-eyebrow-dot" />
-              7 Produk Enterprise Siap Operasional
+              Enterprise Technology, Built for Real Operations
             </div>
 
             <h1 style={{
@@ -76,28 +76,26 @@ export default function ShowroomHero() {
               color: 'var(--foreground)', letterSpacing: '-0.03em',
               marginBottom: '1.5rem',
             }}>
-              Enterprise Application
+              Membangun Sistem
               <br />
               <span style={{
                 background: 'linear-gradient(135deg, var(--primary), var(--secondary))',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text',
-              }}>Experience Center</span>
+              }}>Enterprise</span>
             </h1>
 
             <p style={{
               fontSize: '1.2rem', color: 'var(--text-muted)', lineHeight: 1.7,
               marginBottom: '2.5rem',
             }}>
-              Jelajahi langsung aplikasi enterprise yang telah kami bangun dan operasikan.
-              Dari HRIS, CRM, Core Banking hingga sistem perbankan terintegrasi —
-              semuanya dapat Anda coba secara interaktif di sini.
+              Kami merancang, membangun, dan mengimplementasikan aplikasi enterprise yang disesuaikan dengan proses bisnis — dari HRIS, core operations, hingga sistem khusus untuk kebutuhan organisasi.
             </p>
 
             <div style={{ display: 'flex', gap: '1rem', marginBottom: '2rem' }}>
               <a href="#showcases" className="btn-primary" style={{ padding: '0.875rem 2rem', fontSize: '1rem' }}>
-                Jelajahi Produk
+                Jelajahi Experience Center
                 <ArrowDown size={18} />
               </a>
               <a href="#consultation" className="btn-outline" style={{ padding: '0.875rem 2rem', fontSize: '1rem' }}>
@@ -194,6 +192,26 @@ export default function ShowroomHero() {
               <div style={{ fontSize: '0.875rem', color: 'var(--text-muted)', fontWeight: 500 }}>{stat.label}</div>
             </div>
           ))}
+        </motion.div>
+
+        {/* Text-based Trust Statement */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.7 }}
+          style={{
+            textAlign: 'center',
+            marginTop: '3rem',
+            paddingTop: '2rem',
+            borderTop: '1px solid var(--border)',
+            color: 'var(--text-muted)',
+            fontWeight: 500,
+            letterSpacing: '0.05em',
+            textTransform: 'uppercase',
+            fontSize: '0.875rem'
+          }}
+        >
+          Trusted Across Banking, Financial Services & Enterprise Operations
         </motion.div>
       </div>
 
