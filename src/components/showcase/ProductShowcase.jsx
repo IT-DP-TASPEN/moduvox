@@ -145,7 +145,7 @@ export default function ProductShowcase({ product, index }) {
           >
             {product.screenshots && product.screenshots.length > 0 ? (
               <div style={{ position: 'relative', width: '100%' }}>
-                <img 
+                <img loading="lazy"
                   src={product.screenshots[0]} 
                   alt={`${product.name} Preview`} 
                   style={{ 

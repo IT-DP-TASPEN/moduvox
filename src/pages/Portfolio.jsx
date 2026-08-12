@@ -131,7 +131,7 @@ export default function Portfolio() {
             <div key={item.id} className={styles.card}>
               <div className={styles.cardHeader}>
                 <div className={styles.iconWrapper}>
-                  <img alt={item.category} src={item.img} />
+                  <img loading="lazy" alt={item.category} src={item.img} />
                 </div>
                 <span 
                   className={styles.statusBadge}
