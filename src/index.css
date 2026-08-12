@@ -417,3 +417,28 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
 }
+
+/* ===== CONSULTATION RESPONSIVE ===== */
+.consultation-card {
+  padding: 2rem 1.5rem;
+}
+.consultation-form-card {
+  padding: 1.5rem;
+}
+.consultation-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+@media (min-width: 768px) {
+  .consultation-card {
+    padding: 4rem;
+  }
+  .consultation-form-card {
+    padding: 2.5rem;
+  }
+  .consultation-title {
+    font-size: 2.5rem;
+  }
+}

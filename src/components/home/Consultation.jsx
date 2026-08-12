@@ -35,10 +35,9 @@ Solusi yang Diminati: ${formData.solution || '-'}`;
     <section id="consultation" ref={ref} style={{ padding: '4rem 0 8rem 0' }}>
       <div className="container">
         <div 
-          className="section-dark" 
+          className="section-dark consultation-card" 
           style={{ 
             borderRadius: '32px', 
-            padding: '4rem', 
             boxShadow: '0 30px 60px -15px rgba(0,0,0,0.3)',
             position: 'relative',
             overflow: 'hidden'
@@ -53,7 +52,7 @@ Solusi yang Diminati: ${formData.solution || '-'}`;
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.6 }}
             >
-              <h2 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '1rem', letterSpacing: '-0.02em' }}>
+              <h2 className="consultation-title">
                 Siap Memodernisasi
                 <br />
                 Operasional Anda?
@@ -95,12 +94,11 @@ Solusi yang Diminati: ${formData.solution || '-'}`;
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <div style={{
+              <div className="consultation-form-card" style={{
                 background: 'rgba(255,255,255,0.03)',
                 border: '1px solid rgba(255,255,255,0.08)',
                 backdropFilter: 'blur(10px)',
                 borderRadius: '24px', 
-                padding: '2.5rem',
               }}>
                 <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '1.5rem' }}>
                   Jadwalkan Konsultasi
